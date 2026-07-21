@@ -46,11 +46,12 @@
   },
   {
     "id": "pyo015-s3-r2",
-    "title": "PYO-015 S3 繁中文案 R2（Stacy R1 修訂後重審）",
+    "title": "PYO-015 S3 繁中文案 R3（R2 單項標點修正後重審）",
     "date": "2026-07-21",
-    "description": "《誰把種子藏起來？》S3 Gate3 R2：依 Stacy R1 四維度審查執行 21 項修改（翅果鷹架＋口語韻律＋疊字擬聲增密＋痕系詞統一），三檔文案＋copy 總表＋QA round4＋gate3 R2 審包",
+    "description": "《誰把種子藏起來？》S3 Gate3 R3：R2 僅一處品牌合規標點修正（2-3 P05 問句加引號歸屬栗栗），四維度全通過",
     "files": [
-      "PYO-015_S3_zh-TW_R2.zip"
+      "PYO-015_S3_zh-TW_R2.zip",
+      "PYO-015_S3_zh-TW_R3.zip"
     ]
   }
 ]
