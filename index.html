@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Piyo Deliveries</title>
+<style>
+  :root { --primary: #FF9B50; --bg: #FFF8F0; --card: #FFFFFF; --text: #333; --muted: #888; --border: #F0E6D8; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, "Helvetica Neue", Arial, sans-serif; background: var(--bg); color: var(--text); min-height: 100vh; }
+  header { background: var(--primary); color: #fff; padding: 24px; text-align: center; }
+  header h1 { font-size: 24px; font-weight: 600; }
+  header p { font-size: 14px; opacity: 0.85; margin-top: 4px; }
+  main { max-width: 720px; margin: 24px auto; padding: 0 16px; }
+  .empty { text-align: center; color: var(--muted); padding: 48px 0; }
+  .card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 20px; margin-bottom: 14px; }
+  .card-header { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 8px; }
+  .card-title { font-size: 16px; font-weight: 600; }
+  .card-date { font-size: 13px; color: var(--muted); }
+  .card-desc { font-size: 14px; color: #555; margin-bottom: 12px; }
+  .file-list { display: flex; flex-wrap: wrap; gap: 8px; }
+  .dl-btn { display: inline-block; background: var(--primary); color: #fff; text-decoration: none; padding: 6px 14px; border-radius: 6px; font-size: 13px; font-weight: 500; transition: opacity 0.15s; }
+  .dl-btn:hover { opacity: 0.85; }
+  .count { font-size: 14px; color: var(--muted); margin-bottom: 16px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Piyo Deliveries</h1>
+  <p>交付物集中下載站</p>
+</header>
+<main>
+  <div id="app"><p class="empty">載入中…</p></div>
+</main>
+<script>
+fetch('manifest.json')
+  .then(r => r.json())
+  .then(items => {
+    const app = document.getElementById('app');
+    if (!items.length) { app.innerHTML = '<p class="empty">尚無交付物</p>'; return; }
+    items.sort((a, b) => b.date.localeCompare(a.date));
+    app.innerHTML = '<p class="count">共 ' + items.length + ' 項交付</p>' +
+      items.map(item => {
+        const files = (item.files || []).map(f =>
+          '<a class="dl-btn" href="' + item.id + '/' + f + '" download>' + f + '</a>'
+        ).join('');
+        return '<div class="card">' +
+          '<div class="card-header"><span class="card-title">' + item.title + '</span><span class="card-date">' + item.date + '</span></div>' +
+          (item.description ? '<p class="card-desc">' + item.description + '</p>' : '') +
+          '<div class="file-list">' + files + '</div></div>';
+      }).join('');
+  })
+  .catch(() => {
+    document.getElementById('app').innerHTML = '<p class="empty">manifest.json 載入失敗</p>';
+  });
+</script>
+</body>
+</html>
