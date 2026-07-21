@@ -45,6 +45,15 @@
     ]
   },
   {
+    "id": "pyo014-s3-greenlight",
+    "title": "PYO-014 S3 繁中文案 Green Light 凍結版（2026-07-21）",
+    "date": "2026-07-21",
+    "description": "Gate3 GREEN LIGHT 後凍結版：zh-TW 三檔定稿（.json）＋copy 總表＋gate3_decision＋QA 報告＋book.yaml——覆蓋 R2",
+    "files": [
+      "PYO-014_S3_zh-TW_GreenLight.zip"
+    ]
+  },
+  {
     "id": "pyo015-s3-r2",
     "title": "PYO-015 S3 繁中文案 R3（R2 單項標點修正後重審）",
     "date": "2026-07-21",
