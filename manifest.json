@@ -1,1 +1,11 @@
-[]
+[
+  {
+    "id": "bitable-workbench",
+    "title": "Bitable 工作台設定",
+    "date": "2026-07-09",
+    "description": "Bitable schema 提案 + 三本種子書重置 + 工作表配置",
+    "files": [
+      "bitable_workbench.zip"
+    ]
+  }
+]
