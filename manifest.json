@@ -62,5 +62,14 @@
       "PYO-015_S3_zh-TW_R2.zip",
       "PYO-015_S3_zh-TW_R3.zip"
     ]
+  },
+  {
+    "id": "pyo006-s4b-localize",
+    "title": "PYO-006 S4B 六語放量凍結版（2026-07-21）",
+    "date": "2026-07-21",
+    "description": "《擔心口袋裡有什麼？》六語文案凍結：ja/en-GB/es-MX/pt-BR/th-TH/vi-VN × 3 tiers = 18 定稿 + copy 總表 + QA 證據包 + registry 更新",
+    "files": [
+      "PYO-006_S4B_6lang.zip"
+    ]
   }
 ]
