@@ -16,5 +16,14 @@
     "files": [
       "PYO-011_S3_zh-TW_R2.zip"
     ]
+  },
+  {
+    "id": "pyo014-s3-gate3",
+    "title": "PYO-014 S3 繁中文案 Gate3 審包",
+    "date": "2026-07-21",
+    "description": "《阿嬤的圍裙口袋》S3 重做完整交付：三檔文案＋copy 總表＋QA 三輪報告＋gate3 整合審包，等待 Stacy 親審 Green Light",
+    "files": [
+      "PYO-014_S3_zh-TW.zip"
+    ]
   }
 ]
