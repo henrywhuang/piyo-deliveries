@@ -7,5 +7,14 @@
     "files": [
       "bitable_workbench.zip"
     ]
+  },
+  {
+    "id": "pyo011-s3-r2",
+    "title": "PYO-011 S3 繁中文案 R2（2026-07-21，覆蓋 R1）",
+    "date": "2026-07-21",
+    "description": "Stacy 親審後去編稿腔＋修正 P11 對白歸屬，第二輪交付",
+    "files": [
+      "PYO-011_S3_zh-TW_R2.zip"
+    ]
   }
 ]
