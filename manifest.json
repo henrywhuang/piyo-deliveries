@@ -71,5 +71,14 @@
     "files": [
       "PYO-006_S4B_6lang.zip"
     ]
+  },
+  {
+    "id": "pyo015-s3-greenlight",
+    "title": "PYO-015 S3 繁中文案 Green Light 準備包",
+    "date": "2026-07-22",
+    "description": "《誰把種子藏起來？》Gate3 GREENLIT：zh-TW 三檔 draft＋copy 總表＋QA 五輪報告＋gate3 審包——供 Stacy 本機 Green Light 收尾（rename＋decision＋book.yaml＋deliver＋Bitable Stage）",
+    "files": [
+      "PYO-015_S3_zh-TW_GreenLight_prep.zip"
+    ]
   }
 ]
