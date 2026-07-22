@@ -207,5 +207,18 @@
     "stage": "S4A",
     "status": "pending",
     "round": "gate4"
+  },
+  {
+    "id": "pyo015-s4a-gate4",
+    "title": "PYO-015 S4A en-US Gate4 證據審包（2026-07-22）",
+    "date": "2026-07-22",
+    "description": "《誰把種子藏起來？》S4A en-US 三檔 draft + QA 二輪 + gate4 證據包 + 回譯全量 + registry 提案，等待 Stacy 證據審 Green Light",
+    "files": [
+      "PYO-015_S4A_en-US.zip"
+    ],
+    "book": "PYO-015",
+    "stage": "S4A",
+    "status": "pending",
+    "round": "gate4"
   }
 ]
