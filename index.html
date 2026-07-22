@@ -6,53 +6,204 @@
 <title>Piyo Deliveries</title>
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%23FF9B50'/%3E%3Cellipse cx='32' cy='36' rx='18' ry='16' fill='%23FFD93D'/%3E%3Cellipse cx='32' cy='28' rx='14' ry='13' fill='%23FFE066'/%3E%3Ccircle cx='26' cy='26' r='2.5' fill='%23333'/%3E%3Ccircle cx='38' cy='26' r='2.5' fill='%23333'/%3E%3Cpolygon points='32,30 28,34 36,34' fill='%23FF6B35'/%3E%3C/svg%3E">
 <style>
-  :root { --primary: #FF9B50; --bg: #FFF8F0; --card: #FFFFFF; --text: #333; --muted: #888; --border: #F0E6D8; }
+  :root { --primary: #FF9B50; --bg: #FFF8F0; --card: #FFFFFF; --text: #333; --muted: #888; --border: #F0E6D8; --pending: #E8F5E9; --pending-text: #2E7D32; --frozen: #F3F4F6; --frozen-text: #6B7280; }
   * { margin: 0; padding: 0; box-sizing: border-box; }
   body { font-family: -apple-system, "Helvetica Neue", Arial, sans-serif; background: var(--bg); color: var(--text); min-height: 100vh; }
-  header { background: var(--primary); color: #fff; padding: 24px; text-align: center; }
-  header h1 { font-size: 24px; font-weight: 600; }
-  header p { font-size: 14px; opacity: 0.85; margin-top: 4px; }
-  main { max-width: 720px; margin: 24px auto; padding: 0 16px; }
-  .empty { text-align: center; color: var(--muted); padding: 48px 0; }
-  .card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 20px; margin-bottom: 14px; }
-  .card-header { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 8px; }
-  .card-title { font-size: 16px; font-weight: 600; }
-  .card-date { font-size: 13px; color: var(--muted); }
-  .card-desc { font-size: 14px; color: #555; margin-bottom: 12px; }
-  .file-list { display: flex; flex-wrap: wrap; gap: 8px; }
-  .dl-btn { display: inline-block; background: var(--primary); color: #fff; text-decoration: none; padding: 6px 14px; border-radius: 6px; font-size: 13px; font-weight: 500; transition: opacity 0.15s; }
+  header { background: var(--primary); color: #fff; padding: 20px 24px; }
+  .header-inner { max-width: 800px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; }
+  header h1 { font-size: 20px; font-weight: 600; display: flex; align-items: center; gap: 6px; }
+  .stats { font-size: 13px; opacity: 0.85; }
+  main { max-width: 800px; margin: 0 auto; padding: 16px; }
+  .search-bar { width: 100%; padding: 10px 14px; border: 1px solid var(--border); border-radius: 8px; font-size: 14px; background: var(--card); outline: none; margin-bottom: 20px; }
+  .search-bar:focus { border-color: var(--primary); box-shadow: 0 0 0 2px rgba(255,155,80,0.15); }
+  .section { margin-bottom: 24px; }
+  .section-header { display: flex; align-items: center; gap: 8px; margin-bottom: 10px; cursor: pointer; user-select: none; }
+  .section-title { font-size: 15px; font-weight: 600; }
+  .section-count { font-size: 12px; color: var(--muted); background: #eee; border-radius: 10px; padding: 1px 8px; }
+  .section-toggle { font-size: 11px; color: var(--muted); transition: transform 0.2s; }
+  .section-toggle.collapsed { transform: rotate(-90deg); }
+  .section-body.hidden { display: none; }
+  .book-group { background: var(--card); border: 1px solid var(--border); border-radius: 8px; margin-bottom: 8px; overflow: hidden; }
+  .book-header { display: flex; align-items: center; padding: 10px 14px; cursor: pointer; user-select: none; gap: 10px; }
+  .book-header:hover { background: #FAFAF5; }
+  .book-id { font-size: 13px; font-weight: 700; color: var(--primary); min-width: 64px; }
+  .book-stage { font-size: 12px; font-weight: 500; background: #FFF0E0; color: #B86E00; border-radius: 4px; padding: 1px 6px; }
+  .book-latest { font-size: 13px; flex: 1; color: #555; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .book-date { font-size: 12px; color: var(--muted); min-width: 80px; text-align: right; }
+  .book-expand { font-size: 10px; color: var(--muted); transition: transform 0.2s; }
+  .book-expand.open { transform: rotate(90deg); }
+  .book-rows { border-top: 1px solid var(--border); display: none; }
+  .book-rows.open { display: block; }
+  .row { display: flex; align-items: center; padding: 8px 14px 8px 28px; gap: 10px; border-bottom: 1px solid var(--border); }
+  .row:last-child { border-bottom: none; }
+  .row-round { font-size: 12px; font-weight: 500; min-width: 56px; color: var(--muted); }
+  .row-title { font-size: 13px; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .row-date { font-size: 12px; color: var(--muted); min-width: 80px; text-align: right; }
+  .row-dl { display: flex; gap: 4px; }
+  .dl-btn { display: inline-block; background: var(--primary); color: #fff; text-decoration: none; padding: 3px 10px; border-radius: 5px; font-size: 12px; font-weight: 500; transition: opacity 0.15s; white-space: nowrap; }
   .dl-btn:hover { opacity: 0.85; }
-  .count { font-size: 14px; color: var(--muted); margin-bottom: 16px; }
+  .status-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
+  .status-dot.pending { background: var(--pending-text); }
+  .status-dot.frozen { background: #D1D5DB; }
+  .no-results { text-align: center; color: var(--muted); padding: 32px 0; font-size: 14px; }
+  .misc-card { background: var(--card); border: 1px solid var(--border); border-radius: 8px; padding: 12px 14px; margin-bottom: 8px; display: flex; align-items: center; gap: 10px; }
+  .misc-card .row-title { font-weight: 500; }
 </style>
 </head>
 <body>
 <header>
-  <h1><svg width="28" height="28" viewBox="0 0 64 64" style="vertical-align:-4px;margin-right:6px"><ellipse cx="32" cy="36" rx="18" ry="16" fill="#FFD93D"/><ellipse cx="32" cy="28" rx="14" ry="13" fill="#FFE066"/><circle cx="26" cy="26" r="2.5" fill="#333"/><circle cx="38" cy="26" r="2.5" fill="#333"/><polygon points="32,30 28,34 36,34" fill="#FF6B35"/></svg>Piyo Deliveries</h1>
-  <p>交付物集中下載站</p>
+  <div class="header-inner">
+    <h1><svg width="24" height="24" viewBox="0 0 64 64"><ellipse cx="32" cy="36" rx="18" ry="16" fill="#FFD93D"/><ellipse cx="32" cy="28" rx="14" ry="13" fill="#FFE066"/><circle cx="26" cy="26" r="2.5" fill="#333"/><circle cx="38" cy="26" r="2.5" fill="#333"/><polygon points="32,30 28,34 36,34" fill="#FF6B35"/></svg>Piyo Deliveries</h1>
+    <span class="stats" id="stats"></span>
+  </div>
 </header>
 <main>
-  <div id="app"><p class="empty">載入中…</p></div>
+  <input class="search-bar" type="text" id="search" placeholder="搜尋書號、站別、描述…（如 PYO-013、S4、gate4）">
+  <div id="app"></div>
 </main>
 <script>
 fetch('manifest.json')
   .then(r => r.json())
   .then(items => {
     const app = document.getElementById('app');
-    if (!items.length) { app.innerHTML = '<p class="empty">尚無交付物</p>'; return; }
-    items.sort((a, b) => b.date.localeCompare(a.date));
-    app.innerHTML = '<p class="count">共 ' + items.length + ' 項交付</p>' +
-      items.map(item => {
-        const files = (item.files || []).map(f =>
-          '<a class="dl-btn" href="' + item.id + '/' + f + '" download>' + f + '</a>'
-        ).join('');
-        return '<div class="card">' +
-          '<div class="card-header"><span class="card-title">' + item.title + '</span><span class="card-date">' + item.date + '</span></div>' +
-          (item.description ? '<p class="card-desc">' + item.description + '</p>' : '') +
-          '<div class="file-list">' + files + '</div></div>';
-      }).join('');
+    const searchEl = document.getElementById('search');
+    const statsEl = document.getElementById('stats');
+
+    function render(query) {
+      const q = (query || '').toLowerCase();
+      const filtered = items.filter(it => {
+        if (!q) return true;
+        return [it.id, it.title, it.description, it.book, it.stage, it.round, it.status]
+          .filter(Boolean).some(s => s.toLowerCase().includes(q));
+      });
+
+      const pending = filtered.filter(it => it.status === 'pending');
+      const frozen = filtered.filter(it => it.status === 'frozen');
+      const misc = filtered.filter(it => !it.book);
+      const bookPending = pending.filter(it => it.book);
+      const bookFrozen = frozen.filter(it => it.book);
+
+      statsEl.textContent = items.length + ' deliveries';
+
+      if (!filtered.length) {
+        app.innerHTML = '<p class="no-results">沒有符合「' + esc(q) + '」的交付物</p>';
+        return;
+      }
+
+      let html = '';
+
+      if (bookPending.length) {
+        html += buildSection('待審 / 進行中', bookPending, 'pending', false);
+      }
+      if (bookFrozen.length) {
+        html += buildSection('已凍結', bookFrozen, 'frozen', !bookPending.length ? false : true);
+      }
+      if (misc.length) {
+        html += '<div class="section"><div class="section-header"><span class="section-title">其他</span>' +
+          '<span class="section-count">' + misc.length + '</span></div><div class="section-body">';
+        misc.forEach(it => {
+          const files = (it.files || []).map(f =>
+            '<a class="dl-btn" href="' + it.id + '/' + esc(f) + '" download>' + esc(f) + '</a>'
+          ).join('');
+          html += '<div class="misc-card"><span class="row-title">' + esc(it.title) + '</span>' +
+            '<span class="row-date">' + it.date + '</span>' +
+            '<div class="row-dl">' + files + '</div></div>';
+        });
+        html += '</div></div>';
+      }
+
+      app.innerHTML = html;
+      bindEvents();
+    }
+
+    function buildSection(label, entries, statusClass, startCollapsed) {
+      const byBook = {};
+      entries.forEach(it => {
+        if (!byBook[it.book]) byBook[it.book] = [];
+        byBook[it.book].push(it);
+      });
+      Object.values(byBook).forEach(arr => arr.sort((a, b) => b.date.localeCompare(a.date)));
+      const books = Object.keys(byBook).sort();
+
+      let html = '<div class="section"><div class="section-header" data-section-toggle>' +
+        '<span class="section-toggle' + (startCollapsed ? ' collapsed' : '') + '">&#9660;</span>' +
+        '<span class="section-title">' + label + '</span>' +
+        '<span class="section-count">' + books.length + ' books / ' + entries.length + ' items</span></div>' +
+        '<div class="section-body' + (startCollapsed ? ' hidden' : '') + '">';
+
+      books.forEach(bookId => {
+        const rows = byBook[bookId];
+        const latest = rows[0];
+        const hasMultiple = rows.length > 1;
+        html += '<div class="book-group">';
+        html += '<div class="book-header"' + (hasMultiple ? ' data-book-toggle' : '') + '>' +
+          '<span class="status-dot ' + statusClass + '"></span>' +
+          '<span class="book-id">' + esc(bookId) + '</span>' +
+          '<span class="book-stage">' + esc(latest.stage) + '</span>' +
+          '<span class="book-latest">' + esc(latest.title) + '</span>' +
+          '<span class="book-date">' + latest.date + '</span>';
+        if (hasMultiple) {
+          html += '<span class="book-expand">&#9654; ' + rows.length + '</span>';
+        } else {
+          const files = (latest.files || []).map(f =>
+            '<a class="dl-btn" href="' + latest.id + '/' + esc(f) + '" download>ZIP</a>'
+          ).join('');
+          html += '<div class="row-dl">' + files + '</div>';
+        }
+        html += '</div>';
+
+        if (hasMultiple) {
+          html += '<div class="book-rows">';
+          rows.forEach(it => {
+            const files = (it.files || []).map(f =>
+              '<a class="dl-btn" href="' + it.id + '/' + esc(f) + '" download>' + esc(f) + '</a>'
+            ).join('');
+            html += '<div class="row">' +
+              '<span class="row-round">' + esc(it.round || '-') + '</span>' +
+              '<span class="row-title">' + esc(it.title) + '</span>' +
+              '<span class="row-date">' + it.date + '</span>' +
+              '<div class="row-dl">' + files + '</div></div>';
+          });
+          html += '</div>';
+        }
+        html += '</div>';
+      });
+
+      html += '</div></div>';
+      return html;
+    }
+
+    function esc(s) {
+      const d = document.createElement('div');
+      d.textContent = s || '';
+      return d.innerHTML;
+    }
+
+    function bindEvents() {
+      document.querySelectorAll('[data-section-toggle]').forEach(el => {
+        el.onclick = () => {
+          const arrow = el.querySelector('.section-toggle');
+          const body = el.nextElementSibling;
+          arrow.classList.toggle('collapsed');
+          body.classList.toggle('hidden');
+        };
+      });
+      document.querySelectorAll('[data-book-toggle]').forEach(el => {
+        el.onclick = (e) => {
+          if (e.target.closest('.dl-btn')) return;
+          const rows = el.nextElementSibling;
+          const expand = el.querySelector('.book-expand');
+          rows.classList.toggle('open');
+          if (expand) expand.classList.toggle('open');
+        };
+      });
+    }
+
+    searchEl.addEventListener('input', () => render(searchEl.value));
+    render('');
   })
   .catch(() => {
-    document.getElementById('app').innerHTML = '<p class="empty">manifest.json 載入失敗</p>';
+    document.getElementById('app').innerHTML = '<p class="no-results">manifest.json 載入失敗</p>';
   });
 </script>
 </body>

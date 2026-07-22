@@ -4,135 +4,164 @@
     "title": "Bitable 工作台設定",
     "date": "2026-07-09",
     "description": "Bitable schema 提案 + 三本種子書重置 + 工作表配置",
-    "files": [
-      "bitable_workbench.zip"
-    ]
+    "files": ["bitable_workbench.zip"],
+    "book": "",
+    "stage": "",
+    "status": "frozen",
+    "round": ""
   },
   {
     "id": "pyo011-s3-r2",
     "title": "PYO-011 S3 繁中文案 R2（2026-07-21，覆蓋 R1）",
     "date": "2026-07-21",
     "description": "Stacy 親審後去編稿腔＋修正 P11 對白歸屬，第二輪交付",
-    "files": [
-      "PYO-011_S3_zh-TW_R2.zip"
-    ]
+    "files": ["PYO-011_S3_zh-TW_R2.zip"],
+    "book": "PYO-011",
+    "stage": "S3",
+    "status": "frozen",
+    "round": "R2"
   },
   {
     "id": "pyo011-s3-greenlight",
     "title": "PYO-011 S3 繁中文案 Green Light 凍結版（2026-07-21）",
     "date": "2026-07-21",
     "description": "Gate3 GREEN LIGHT 後凍結版：zh-TW 三檔定稿（.json）＋copy 總表＋gate3_decision＋QA 報告＋book.yaml——覆蓋 R2",
-    "files": [
-      "PYO-011_S3_zh-TW_GreenLight.zip"
-    ]
+    "files": ["PYO-011_S3_zh-TW_GreenLight.zip"],
+    "book": "PYO-011",
+    "stage": "S3",
+    "status": "frozen",
+    "round": "greenlight"
   },
   {
     "id": "pyo014-s3-gate3",
     "title": "PYO-014 S3 繁中文案 Gate3 審包",
     "date": "2026-07-21",
     "description": "《阿嬤的圍裙口袋》S3 重做完整交付：三檔文案＋copy 總表＋QA 三輪報告＋gate3 整合審包，等待 Stacy 親審 Green Light",
-    "files": [
-      "PYO-014_S3_zh-TW.zip"
-    ]
+    "files": ["PYO-014_S3_zh-TW.zip"],
+    "book": "PYO-014",
+    "stage": "S3",
+    "status": "frozen",
+    "round": "R1"
   },
   {
     "id": "pyo014-s3-r2",
     "title": "PYO-014 S3 繁中文案 R2（Stacy R1 修訂後重審）",
     "date": "2026-07-21",
     "description": "《阿嬤的圍裙口袋》S3 Gate3 R2：依 Stacy R1 四維度修改（痕跡→記號/印子＋做過/走過→留的＋P03 因果拆兩拍＋P06 去擬人），三檔文案＋copy 總表＋QA 報告＋gate3 R2 審包",
-    "files": [
-      "PYO-014_S3_zh-TW_R2.zip"
-    ]
+    "files": ["PYO-014_S3_zh-TW_R2.zip"],
+    "book": "PYO-014",
+    "stage": "S3",
+    "status": "frozen",
+    "round": "R2"
   },
   {
     "id": "pyo014-s3-greenlight",
     "title": "PYO-014 S3 繁中文案 Green Light 凍結版（2026-07-21）",
     "date": "2026-07-21",
     "description": "Gate3 GREEN LIGHT 後凍結版：zh-TW 三檔定稿（.json）＋copy 總表＋gate3_decision＋QA 報告＋book.yaml——覆蓋 R2",
-    "files": [
-      "PYO-014_S3_zh-TW_GreenLight.zip"
-    ]
+    "files": ["PYO-014_S3_zh-TW_GreenLight.zip"],
+    "book": "PYO-014",
+    "stage": "S3",
+    "status": "frozen",
+    "round": "greenlight"
   },
   {
     "id": "pyo015-s3-r2",
     "title": "PYO-015 S3 繁中文案 R3（R2 單項標點修正後重審）",
     "date": "2026-07-21",
     "description": "《誰把種子藏起來？》S3 Gate3 R3：R2 僅一處品牌合規標點修正（2-3 P05 問句加引號歸屬栗栗），四維度全通過",
-    "files": [
-      "PYO-015_S3_zh-TW_R2.zip",
-      "PYO-015_S3_zh-TW_R3.zip"
-    ]
+    "files": ["PYO-015_S3_zh-TW_R2.zip", "PYO-015_S3_zh-TW_R3.zip"],
+    "book": "PYO-015",
+    "stage": "S3",
+    "status": "frozen",
+    "round": "R3"
   },
   {
     "id": "pyo006-s4b-localize",
     "title": "PYO-006 S4B 六語放量凍結版（2026-07-21）",
     "date": "2026-07-21",
     "description": "《擔心口袋裡有什麼？》六語文案凍結：ja/en-GB/es-MX/pt-BR/th-TH/vi-VN × 3 tiers = 18 定稿 + copy 總表 + QA 證據包 + registry 更新",
-    "files": [
-      "PYO-006_S4B_6lang.zip"
-    ]
+    "files": ["PYO-006_S4B_6lang.zip"],
+    "book": "PYO-006",
+    "stage": "S4B",
+    "status": "frozen",
+    "round": "greenlight"
   },
   {
     "id": "pyo015-s3-greenlight",
     "title": "PYO-015 S3 繁中文案 Green Light 準備包",
     "date": "2026-07-22",
-    "description": "《誰把種子藏起來？》Gate3 GREENLIT：zh-TW 三檔 draft＋copy 總表＋QA 五輪報告＋gate3 審包——供 Stacy 本機 Green Light 收尾（rename＋decision＋book.yaml＋deliver＋Bitable Stage）",
-    "files": [
-      "PYO-015_S3_zh-TW_GreenLight_prep.zip"
-    ]
+    "description": "《誰把種子藏起來？》Gate3 GREENLIT：zh-TW 三檔 draft＋copy 總表＋QA 五輪報告＋gate3 審包——供 Stacy 本機 Green Light 收尾",
+    "files": ["PYO-015_S3_zh-TW_GreenLight_prep.zip"],
+    "book": "PYO-015",
+    "stage": "S3",
+    "status": "frozen",
+    "round": "greenlight"
   },
   {
     "id": "pyo008-s4b-localize",
     "title": "PYO-008 S4B 六語放量凍結版（2026-07-22）",
     "date": "2026-07-22",
     "description": "《小天鵝慢慢長大》六語文案凍結：ja/en-GB/es-MX/pt-BR/th-TH/vi-VN × 3 tiers = 18 定稿 + copy 總表 + QA 證據包 + registry 更新",
-    "files": [
-      "PYO-008_S4B_6lang.zip"
-    ]
+    "files": ["PYO-008_S4B_6lang.zip"],
+    "book": "PYO-008",
+    "stage": "S4B",
+    "status": "frozen",
+    "round": "greenlight"
   },
   {
     "id": "pyo002-s4b-localize",
     "title": "PYO-002 S4B 六語放量審稿版（2026-07-22）",
     "date": "2026-07-22",
     "description": "《龜兔賽跑》六語文案 draft：ja/en-GB/es-MX/pt-BR/th-TH/vi-VN × 3 tiers = 18 draft + copy 總表 + QA 證據包 + B0 rulings",
-    "files": [
-      "PYO-002_S4B_6lang.zip"
-    ]
+    "files": ["PYO-002_S4B_6lang.zip"],
+    "book": "PYO-002",
+    "stage": "S4B",
+    "status": "pending",
+    "round": "R1"
   },
   {
     "id": "pyo008-s4-review",
     "title": "PYO-008《小天鵝慢慢長大》S4 文字審查包（R1/R2/R3 + gate4 QA）",
     "date": "2026-07-22",
     "description": "三輪文字審查報告（R1 不通過、R2 修改指令、R3 Greenlight）＋ gate4 en-US 審包 QA 核驗",
-    "files": [
-      "PYO-008_S4_review.zip"
-    ]
+    "files": ["PYO-008_S4_review.zip"],
+    "book": "PYO-008",
+    "stage": "S4A",
+    "status": "frozen",
+    "round": "greenlight"
   },
   {
     "id": "pyo009-s4-gate4",
     "title": "PYO-009《我有我的小光》S4 gate4 五維度審包＋色盤分析",
     "date": "2026-07-22",
     "description": "gate4 en-US 五維度審查（初版 + R2）＋ Opus 色盤專家分析",
-    "files": [
-      "PYO-009_S4_gate4_review.zip"
-    ]
+    "files": ["PYO-009_S4_gate4_review.zip"],
+    "book": "PYO-009",
+    "stage": "S4A",
+    "status": "pending",
+    "round": "R2"
   },
   {
     "id": "pyo012-s4-review",
     "title": "PYO-012《獅子與老鼠》S4 文字審查包（R1 Greenlight + locale 稽核 + 微修指令）",
     "date": "2026-07-22",
     "description": "R1 greenlight + 翻譯腔／local 語感專項稽核 + 微修指令單＋ gate4 QA",
-    "files": [
-      "PYO-012_S4_review.zip"
-    ]
+    "files": ["PYO-012_S4_review.zip"],
+    "book": "PYO-012",
+    "stage": "S4A",
+    "status": "frozen",
+    "round": "greenlight"
   },
   {
     "id": "pyo013-s4-review",
     "title": "PYO-013《拔蘿蔔》S4 文字審查包（R1 Greenlight + gate4 QA）",
     "date": "2026-07-22",
     "description": "R1 五維度全通過 Greenlight ＋ gate4 en-US 審包核驗",
-    "files": [
-      "PYO-013_S4_review.zip"
-    ]
+    "files": ["PYO-013_S4_review.zip"],
+    "book": "PYO-013",
+    "stage": "S4A",
+    "status": "frozen",
+    "round": "greenlight"
   }
 ]

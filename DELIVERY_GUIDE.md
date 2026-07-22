@@ -47,7 +47,11 @@ data.append({
     'title': '{交付標題，中文}',
     'date': '$(date +%Y-%m-%d)',
     'description': '{一句話描述}',
-    'files': ['{檔名}.zip']
+    'files': ['{檔名}.zip'],
+    'book': '{PYO-NNN 或空字串}',
+    'stage': '{S3/S4A/S4B/… 或空字串}',
+    'status': '{pending 或 frozen}',
+    'round': '{R1/R2/greenlight/… 或空字串}'
 })
 with open('/tmp/piyo-deliveries/manifest.json', 'w') as f:
     json.dump(data, f, ensure_ascii=False, indent=2)
@@ -63,6 +67,14 @@ with open('/tmp/piyo-deliveries/manifest.json', 'w') as f:
 | `date` | string | 是 | ISO 日期 YYYY-MM-DD |
 | `description` | string | 否 | 一句話描述 |
 | `files` | string[] | 是 | ZIP 檔名列表（相對於 `{id}/`） |
+| `book` | string | 是 | 書號，如 `PYO-013`；非書包交付填空字串 |
+| `stage` | string | 是 | 站別，如 `S3`、`S4A`、`S4B`；無則空字串 |
+| `status` | string | 是 | `pending`（待審/進行中）或 `frozen`（已凍結/已完結） |
+| `round` | string | 是 | 輪次：`R1`、`R2`、`greenlight` 等；無則空字串 |
+
+**status 判定規則**：
+- `pending`：等待 Stacy 審核、尚未 Green Light、或需要後續修訂
+- `frozen`：已 Green Light、已凍結定版、或為歸檔紀錄
 
 ### 4. Commit & Push
 
@@ -83,4 +95,5 @@ git push origin main
 - **不要刪除其他交付**——只追加，不覆蓋 manifest.json
 - **ZIP 大小限制**：GitHub Pages 單檔 100MB、repo 總量建議 < 1GB
 - **同一 task-slug 更新**：覆蓋 ZIP + 更新 manifest.json 中該條的 date，不要重複追加
-- **repo 是 private**：GitHub Pages 只有 repo 成員可訪問
+- **repo 是 public**：GitHub Pages 免費版需 public repo
+- **新 UI 結構**：index.html 按 status 分區（待審置頂、已凍結可收合）、按 book 分組、支援搜尋
