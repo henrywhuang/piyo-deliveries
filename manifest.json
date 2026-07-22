@@ -89,5 +89,14 @@
     "files": [
       "PYO-008_S4B_6lang.zip"
     ]
+  },
+  {
+    "id": "pyo002-s4b-localize",
+    "title": "PYO-002 S4B 六語放量審稿版（2026-07-22）",
+    "date": "2026-07-22",
+    "description": "《龜兔賽跑》六語文案 draft：ja/en-GB/es-MX/pt-BR/th-TH/vi-VN × 3 tiers = 18 draft + copy 總表 + QA 證據包 + B0 rulings",
+    "files": [
+      "PYO-002_S4B_6lang.zip"
+    ]
   }
 ]
