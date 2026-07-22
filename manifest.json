@@ -220,5 +220,18 @@
     "stage": "S4A",
     "status": "pending",
     "round": "gate4"
+  },
+  {
+    "id": "pyo011-s4a-en-us-gate4",
+    "title": "PYO-011《輪到你，輪到我》S4A en-US gate④ 交審",
+    "date": "2026-07-22",
+    "description": "en-US 三檔 draft + QA 二輪(復核輪) + 回譯 31 頁 + gate4 證據包。⏸️ E-2 高潮偏移待裁定。",
+    "files": [
+      "PYO-011_S4A_en-US.zip"
+    ],
+    "book": "PYO-011",
+    "stage": "S4A",
+    "status": "pending",
+    "round": "R2"
   }
 ]
