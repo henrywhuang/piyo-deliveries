@@ -98,5 +98,41 @@
     "files": [
       "PYO-002_S4B_6lang.zip"
     ]
+  },
+  {
+    "id": "pyo008-s4-review",
+    "title": "PYO-008《小天鵝慢慢長大》S4 文字審查包（R1/R2/R3 + gate4 QA）",
+    "date": "2026-07-22",
+    "description": "三輪文字審查報告（R1 不通過、R2 修改指令、R3 Greenlight）＋ gate4 en-US 審包 QA 核驗",
+    "files": [
+      "PYO-008_S4_review.zip"
+    ]
+  },
+  {
+    "id": "pyo009-s4-gate4",
+    "title": "PYO-009《我有我的小光》S4 gate4 五維度審包＋色盤分析",
+    "date": "2026-07-22",
+    "description": "gate4 en-US 五維度審查（初版 + R2）＋ Opus 色盤專家分析",
+    "files": [
+      "PYO-009_S4_gate4_review.zip"
+    ]
+  },
+  {
+    "id": "pyo012-s4-review",
+    "title": "PYO-012《獅子與老鼠》S4 文字審查包（R1 Greenlight + locale 稽核 + 微修指令）",
+    "date": "2026-07-22",
+    "description": "R1 greenlight + 翻譯腔／local 語感專項稽核 + 微修指令單＋ gate4 QA",
+    "files": [
+      "PYO-012_S4_review.zip"
+    ]
+  },
+  {
+    "id": "pyo013-s4-review",
+    "title": "PYO-013《拔蘿蔔》S4 文字審查包（R1 Greenlight + gate4 QA）",
+    "date": "2026-07-22",
+    "description": "R1 五維度全通過 Greenlight ＋ gate4 en-US 審包核驗",
+    "files": [
+      "PYO-013_S4_review.zip"
+    ]
   }
 ]
