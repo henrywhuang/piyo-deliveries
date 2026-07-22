@@ -80,5 +80,14 @@
     "files": [
       "PYO-015_S3_zh-TW_GreenLight_prep.zip"
     ]
+  },
+  {
+    "id": "pyo008-s4b-localize",
+    "title": "PYO-008 S4B 六語放量凍結版（2026-07-22）",
+    "date": "2026-07-22",
+    "description": "《小天鵝慢慢長大》六語文案凍結：ja/en-GB/es-MX/pt-BR/th-TH/vi-VN × 3 tiers = 18 定稿 + copy 總表 + QA 證據包 + registry 更新",
+    "files": [
+      "PYO-008_S4B_6lang.zip"
+    ]
   }
 ]
