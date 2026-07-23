@@ -246,5 +246,18 @@
     "stage": "S4A",
     "status": "pending",
     "round": "R2"
+  },
+  {
+    "id": "pyo015-s4-r2",
+    "title": "PYO-015 S4 R2 修改重審",
+    "date": "2026-07-23",
+    "description": "S4 R1 五維審修改落地：zh-TW/en-US ×3 tier + 台詞標記修正 + Chomp! registry + 機檢報告",
+    "files": [
+      "PYO-015_S4_R2.zip"
+    ],
+    "book": "PYO-015",
+    "stage": "S4A",
+    "status": "pending",
+    "round": "R2"
   }
 ]
