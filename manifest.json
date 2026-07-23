@@ -285,5 +285,18 @@
     "stage": "S4A",
     "status": "pending",
     "round": "R3"
+  },
+  {
+    "id": "pyo010-s4-r3",
+    "title": "PYO-010《不一樣的斑點》S4A en-US R3（三檔補圓圓台詞＋2-3 budget trim）",
+    "date": "2026-07-23",
+    "description": "R3：Stacy R2 必修——高潮頁三檔補圓圓台詞（zh「那邊有亮亮的！」）；2-3 action beat 歸因＋P01 trim 控 max_total_len 87.25/88；回譯 4 頁重譯＋gate4 重生成＋機檢全綠",
+    "files": [
+      "PYO-010_S4A_en-US_R3.zip"
+    ],
+    "book": "PYO-010",
+    "stage": "S4A",
+    "status": "pending",
+    "round": "R3"
   }
 ]
