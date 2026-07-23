@@ -272,5 +272,18 @@
     "stage": "S4A",
     "status": "pending",
     "round": "R2"
+  },
+  {
+    "id": "pyo011-s4a-r3",
+    "title": "PYO-011 S4A en-US R3（P07 指示修改＋附件）",
+    "date": "2026-07-23",
+    "description": "R3：Stacy R2 審稿 1 項文字修改（2-3 P07）＋Registry 確認＋Lint 21 項 warnings 明細",
+    "files": [
+      "PYO-011_S4A_en-US_R3.zip"
+    ],
+    "book": "PYO-011",
+    "stage": "S4A",
+    "status": "pending",
+    "round": "R3"
   }
 ]
