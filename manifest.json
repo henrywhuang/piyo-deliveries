@@ -233,5 +233,18 @@
     "stage": "S4A",
     "status": "pending",
     "round": "R2"
+  },
+  {
+    "id": "pyo010-s4-r2",
+    "title": "PYO-010《不一樣的斑點》S4A en-US R2 審查包（6 必改落地 + F03-F06 裁定 + registry 回寫）",
+    "date": "2026-07-23",
+    "description": "S4 R1 Stacy 六項必改落地（P01/P02/P03/P06/P09 ×多檔位）+ Opus 專家裁定 F03 DISMISS / F04 KEEP / F05 ACCEPT / F06 EXEMPT + character_names 定案 + onomatopoeia scene keys + B-4 例外 + 機檢全綠",
+    "files": [
+      "PYO-010_S4A_en-US_R2.zip"
+    ],
+    "book": "PYO-010",
+    "stage": "S4A",
+    "status": "pending",
+    "round": "R2"
   }
 ]
