@@ -298,5 +298,18 @@
     "stage": "S4A",
     "status": "pending",
     "round": "R3"
+  },
+  {
+    "id": "pyo008-s1-gate1",
+    "title": "PYO-008 S1 故事設計 Gate1 審包（重做版）",
+    "date": "2026-07-25",
+    "description": "《小天鵝慢慢長大》重做 S1：design.md＋book.yaml＋QA round1（十維 pass）＋gate1 審包，等待 Stacy Green Light",
+    "files": [
+      "PYO-008_S1_gate1.zip"
+    ],
+    "book": "PYO-008",
+    "stage": "S1",
+    "status": "pending",
+    "round": "gate1"
   }
 ]
