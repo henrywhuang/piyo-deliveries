@@ -311,5 +311,18 @@
     "stage": "S1",
     "status": "pending",
     "round": "gate1"
+  },
+  {
+    "id": "pyo005-s1-gate1",
+    "title": "PYO-005《心情天氣小屋》S1 故事設計 gate1",
+    "date": "2026-07-25",
+    "description": "concept_contract v1 + 10-beat 疊句型骨架 + 主編十維 QA pass + gate1 審包，awaiting Green Light",
+    "files": [
+      "PYO-005_S1_gate1.zip"
+    ],
+    "book": "PYO-005",
+    "stage": "S1",
+    "status": "pending",
+    "round": "gate1"
   }
 ]
