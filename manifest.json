@@ -378,6 +378,19 @@
     "round": "R2"
   },
   {
+    "id": "pyo017-s1-gate1-r3",
+    "title": "PYO-017《我的斑點不一樣》S1 Gate1 R3 同步確認版",
+    "date": "2026-07-28",
+    "description": "R3 三項同步層修訂：摘要五處統一雙層翻轉＋§6 檔位明確保留層＋humor 偽裝崩壞；AI verdict: pass，等待 Green Light",
+    "files": [
+      "PYO-017_S1_gate1_R3.zip"
+    ],
+    "book": "PYO-017",
+    "stage": "S1",
+    "status": "pending",
+    "round": "R3"
+  },
+  {
     "id": "pyo019-s1-gate1",
     "title": "PYO-019《城市老鼠與鄉下老鼠》S1 故事設計 Gate 1 審包",
     "date": "2026-07-28",
