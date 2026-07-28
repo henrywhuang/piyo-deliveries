@@ -441,5 +441,18 @@
     "stage": "S2",
     "status": "pending",
     "round": "R1"
+  },
+  {
+    "id": "pyo017-s2-gate2",
+    "title": "PYO-017 S2 分鏡 — 關卡② 戲劇效果審",
+    "date": "2026-07-28",
+    "description": "《我的斑點不一樣》S2 分鏡表 v0.12（13 頁母版）+ QA round4 pass + gate2 審閱檔",
+    "files": [
+      "PYO-017_S2_gate2.zip"
+    ],
+    "book": "PYO-017",
+    "stage": "S2",
+    "status": "pending",
+    "round": "R1"
   }
 ]
