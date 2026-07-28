@@ -389,5 +389,18 @@
     "stage": "S1",
     "status": "pending",
     "round": "gate1"
+  },
+  {
+    "id": "pyo019-s1-gate1-r2",
+    "title": "PYO-019《城市老鼠與鄉下老鼠》S1 故事設計 Gate1 R2 修訂版",
+    "date": "2026-07-28",
+    "description": "R2 四項修訂：P12 城鄉月光接回、疊句 P07 補回、禾禾短尾搖晃、P11 刪旁白結論；AI QA 10/10 pass，等待 Green Light",
+    "files": [
+      "PYO-019_S1_gate1_R2.zip"
+    ],
+    "book": "PYO-019",
+    "stage": "S1",
+    "status": "pending",
+    "round": "R2"
   }
 ]
