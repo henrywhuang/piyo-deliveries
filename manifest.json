@@ -324,5 +324,18 @@
     "stage": "S1",
     "status": "pending",
     "round": "gate1"
+  },
+  {
+    "id": "pyo001-s4b-zh-cn",
+    "title": "PYO-001 三只小猪 zh-CN 派生文本 Gate4 審包",
+    "date": "2026-07-28",
+    "description": "zh-CN 派生-重文本（3 檔位 .draft.json）＋QA 漏斗證據＋gate4 證據包，待 Stacy Green Light",
+    "files": [
+      "PYO-001_S4B_zh-CN.zip"
+    ],
+    "book": "PYO-001",
+    "stage": "S4B",
+    "status": "pending",
+    "round": "R1"
   }
 ]
