@@ -363,5 +363,18 @@
     "stage": "S1",
     "status": "pending",
     "round": "gate1"
+  },
+  {
+    "id": "pyo019-s1-gate1",
+    "title": "PYO-019《城市老鼠與鄉下老鼠》S1 故事設計 Gate 1 審包",
+    "date": "2026-07-28",
+    "description": "成長旅程型＋三次驚嚇遞進，AI QA 10/10 pass 一輪收斂，等待 Stacy Green Light",
+    "files": [
+      "PYO-019_S1_gate1.zip"
+    ],
+    "book": "PYO-019",
+    "stage": "S1",
+    "status": "pending",
+    "round": "gate1"
   }
 ]
