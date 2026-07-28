@@ -350,5 +350,18 @@
     "stage": "S4B",
     "status": "frozen",
     "round": "greenlight"
+  },
+  {
+    "id": "pyo017-s1-gate1",
+    "title": "PYO-017《我的斑點不一樣》S1 故事設計 Gate1 審包",
+    "date": "2026-07-28",
+    "description": "小花豹斑斑三次偽裝斑點失敗→猜猜我是誰→媽媽辨認；AI verdict: pass，等待 Green Light",
+    "files": [
+      "PYO-017_S1_gate1.zip"
+    ],
+    "book": "PYO-017",
+    "stage": "S1",
+    "status": "pending",
+    "round": "gate1"
   }
 ]
