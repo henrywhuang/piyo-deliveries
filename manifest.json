@@ -355,9 +355,22 @@
     "id": "pyo017-s1-gate1",
     "title": "PYO-017《我的斑點不一樣》S1 故事設計 Gate1 審包",
     "date": "2026-07-28",
-    "description": "R2 六項修訂版：星星斑點→右側腰際、雙層翻轉、遮→掀對稱、疊句旁白化、左右鎖定、自述收束；AI verdict: pass，等待 Green Light",
+    "description": "小花豹斑斑三次偽裝斑點失敗→猜猜我是誰→媽媽辨認；AI verdict: pass，等待 Stacy 審核",
     "files": [
       "PYO-017_S1_gate1.zip"
+    ],
+    "book": "PYO-017",
+    "stage": "S1",
+    "status": "pending",
+    "round": "R1"
+  },
+  {
+    "id": "pyo017-s1-gate1-r2",
+    "title": "PYO-017《我的斑點不一樣》S1 故事設計 Gate1 R2 修訂版",
+    "date": "2026-07-28",
+    "description": "R2 六項修訂：星星斑點→右側腰際、P11-P12 雙層翻轉、遮→掀對稱、疊句旁白化、左右鎖定、P13 自述收束；AI verdict: pass，等待 Green Light",
+    "files": [
+      "PYO-017_S1_gate1_R2.zip"
     ],
     "book": "PYO-017",
     "stage": "S1",
