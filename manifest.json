@@ -342,13 +342,13 @@
     "id": "pyo003-s4b-zh-cn-gate4",
     "title": "PYO-003 zh-CN 派生-重 Gate4 证据包",
     "date": "2026-07-28",
-    "description": "金发女孩和三只熊 zh-CN 文本（10 处重讲 + QA pass），待 Green Light",
+    "description": "金发女孩和三只熊 zh-CN 文本凍結（Green Light + S5 rebreak）",
     "files": [
       "PYO-003_S4B_zh-CN.zip"
     ],
     "book": "PYO-003",
     "stage": "S4B",
-    "status": "pending",
-    "round": "R1"
+    "status": "frozen",
+    "round": "greenlight"
   }
 ]
