@@ -314,16 +314,16 @@
   },
   {
     "id": "pyo005-s1-gate1",
-    "title": "PYO-005《黑夜裡的小燈》S1 故事設計 gate1 R2",
+    "title": "PYO-005《黑夜裡的小燈》S1 Green Light",
     "date": "2026-07-28",
-    "description": "R2 修訂版（Stacy R1 七項退回全落實）：石頭規則一元化、咕咕邀請＋認知落差演出、P13 去說教、點點去睡衣、呼呼→咕咕、3-5 檔修正；主編十維 QA 全 pass；awaiting Green Light",
+    "description": "S1 結案：R1 七項＋R2 P13 規則修正全落實；Stacy 判定故事好✓ AI通病✓ 底線✓，直接進 S2",
     "files": [
       "PYO-005_S1_gate1.zip"
     ],
     "book": "PYO-005",
     "stage": "S1",
-    "status": "pending",
-    "round": "R2"
+    "status": "frozen",
+    "round": "greenlight"
   },
   {
     "id": "pyo001-s4b-zh-cn",
