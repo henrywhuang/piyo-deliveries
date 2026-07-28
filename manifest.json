@@ -428,5 +428,18 @@
     "stage": "S2",
     "status": "pending",
     "round": "gate2"
+  },
+  {
+    "id": "pyo019-s2-gate2",
+    "title": "PYO-019 城市老鼠與鄉下老鼠 — S2 分鏡 gate2 審包",
+    "date": "2026-07-28",
+    "description": "S2 分鏡表 v0.12（12頁母版/10/8）+ gate2 審閱檔 + QA round3 報告。八維 pass，等 Stacy Green Light。",
+    "files": [
+      "PYO-019_S2_gate2.zip"
+    ],
+    "book": "PYO-019",
+    "stage": "S2",
+    "status": "pending",
+    "round": "R1"
   }
 ]
