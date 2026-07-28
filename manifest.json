@@ -420,14 +420,14 @@
     "id": "pyo005-s2-gate2",
     "title": "PYO-005 S2 分鏡 關卡②審包",
     "date": "2026-07-28",
-    "description": "黑夜裡的小燈 v0.12 分鏡表（13頁）＋八維 QA round3 pass＋gate2 審閱檔",
+    "description": "S2 分鏡 R2：17 項 R1 修改全落地（三檔重編＋版面多樣化＋圖說打磨＋擬聲具名）",
     "files": [
       "PYO-005_S2_gate2.zip"
     ],
     "book": "PYO-005",
     "stage": "S2",
     "status": "pending",
-    "round": "gate2"
+    "round": "R2"
   },
   {
     "id": "pyo019-s2-gate2",
