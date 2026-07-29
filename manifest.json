@@ -493,5 +493,18 @@
     "stage": "S3",
     "status": "pending",
     "round": "R1"
+  },
+  {
+    "id": "pyo005-s3-gate3",
+    "title": "PYO-005《黑夜裡的小燈》S3 繁中文案 — 關卡③審包",
+    "date": "2026-07-29",
+    "description": "zh-TW 母本三檔（5-6/3-5/2-3）＋QA 漏斗 2 輪＋gate3 整合審閱檔。verdict: escalated（⏸️×1：2-3 P09 三連否定待裁定）。",
+    "files": [
+      "PYO-005_S3_zh-TW.zip"
+    ],
+    "book": "PYO-005",
+    "stage": "S3",
+    "status": "pending",
+    "round": "R1"
   }
 ]
