@@ -519,5 +519,18 @@
     "stage": "S3",
     "status": "pending",
     "round": "R2"
+  },
+  {
+    "id": "pyo033-s1-gate1",
+    "title": "PYO-033 S1 故事設計書 — 關卡① 審包",
+    "date": "2026-07-29",
+    "description": "《誰把種子藏起來？》環遊式 14 頁母版骨架，主編 10 維全 pass，交 Stacy Green Light",
+    "files": [
+      "PYO-033_S1_gate1.zip"
+    ],
+    "book": "PYO-033",
+    "stage": "S1",
+    "status": "pending",
+    "round": "R1"
   }
 ]
