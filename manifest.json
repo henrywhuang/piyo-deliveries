@@ -571,5 +571,18 @@
     "stage": "S4A",
     "status": "pending",
     "round": "gate4"
+  },
+  {
+    "id": "pyo019-s4a-gate4",
+    "title": "PYO-019《城市老鼠與鄉下老鼠》S4A en-US gate4 證據包",
+    "date": "2026-07-29",
+    "description": "en-US 三檔 draft + QA 一輪 pass（checklist 24/0、ESL 0 筆、concept fidelity 全過）+ 回譯全量 30 頁（0 中度偏移）+ gate4 證據包。等待 Stacy 證據審 Green Light",
+    "files": [
+      "PYO-019_S4A_en-US.zip"
+    ],
+    "book": "PYO-019",
+    "stage": "S4A",
+    "status": "pending",
+    "round": "gate4"
   }
 ]
