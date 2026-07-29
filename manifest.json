@@ -467,5 +467,31 @@
     "stage": "S2",
     "status": "pending",
     "round": "R2"
+  },
+  {
+    "id": "pyo017-s3-gate3",
+    "title": "PYO-017《我的斑點不一樣》S3 繁中文案 — 關卡③審包",
+    "date": "2026-07-29",
+    "description": "zh-TW 母本三檔（5-6/3-5/2-3）＋QA 漏斗 2 輪＋gate3 整合審閱檔。verdict: escalated（⏸️ B-4 對話比例待裁定）。",
+    "files": [
+      "PYO-017_S3_zh-TW.zip"
+    ],
+    "book": "PYO-017",
+    "stage": "S3",
+    "status": "pending",
+    "round": "R1"
+  },
+  {
+    "id": "pyo019-s3-gate3",
+    "title": "PYO-019 城市老鼠與鄉下老鼠 — S3 繁中文案 關卡③審包",
+    "date": "2026-07-29",
+    "description": "zh-TW 文本 QA 完成（verdict: escalated, ⏸️×2），等 Stacy 親審。含 gate3 整合審閱檔＋QA 報告 round1-2＋copy 總表＋三檔 draft。",
+    "files": [
+      "PYO-019_S3_zh-TW.zip"
+    ],
+    "book": "PYO-019",
+    "stage": "S3",
+    "status": "pending",
+    "round": "R1"
   }
 ]
