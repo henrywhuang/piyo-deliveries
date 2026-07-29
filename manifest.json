@@ -530,7 +530,7 @@
     ],
     "book": "PYO-033",
     "stage": "S1",
-    "status": "pending",
+    "status": "frozen",
     "round": "R1"
   },
   {
@@ -543,7 +543,7 @@
     ],
     "book": "PYO-033",
     "stage": "S1",
-    "status": "pending",
+    "status": "frozen",
     "round": "R2"
   },
   {
