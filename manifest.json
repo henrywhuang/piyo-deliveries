@@ -506,5 +506,18 @@
     "stage": "S3",
     "status": "pending",
     "round": "R1"
+  },
+  {
+    "id": "pyo019-s3-gate3-r2",
+    "title": "PYO-019 S3 zh-TW 文案 R2 送審",
+    "date": "2026-07-29",
+    "description": "Stacy R1 十項修訂已落地，送 R2 審查",
+    "files": [
+      "PYO-019_S3_zh-TW_R2.zip"
+    ],
+    "book": "PYO-019",
+    "stage": "S3",
+    "status": "pending",
+    "round": "R2"
   }
 ]
