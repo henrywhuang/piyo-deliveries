@@ -545,5 +545,18 @@
     "stage": "S1",
     "status": "pending",
     "round": "R2"
+  },
+  {
+    "id": "pyo005-s4a-gate4",
+    "title": "PYO-005《黑夜裡的小燈》S4A en-US gate4 證據包",
+    "date": "2026-07-29",
+    "description": "en-US 三檔 draft + QA 二輪（R1 fix_required→R2 復核輪）+ 回譯全量 35 頁 + gate4 證據包。⏸️ 2 項待 Stacy 裁決（F3 P10 平行、F8 P01 冒號格式）",
+    "files": [
+      "PYO-005_S4A_en-US.zip"
+    ],
+    "book": "PYO-005",
+    "stage": "S4A",
+    "status": "pending",
+    "round": "gate4"
   }
 ]
