@@ -524,9 +524,22 @@
     "id": "pyo033-s1-gate1",
     "title": "PYO-033 S1 故事設計書 — 關卡① 審包",
     "date": "2026-07-29",
-    "description": "《誰把種子藏起來？》R1 四項修改完成（時間線/翻轉/lock features/全員同框），主編 R2 10 維全 pass，交 Stacy Green Light",
+    "description": "《誰把種子藏起來？》環遊式 14 頁母版骨架，主編 10 維全 pass，交 Stacy Green Light",
     "files": [
       "PYO-033_S1_gate1.zip"
+    ],
+    "book": "PYO-033",
+    "stage": "S1",
+    "status": "pending",
+    "round": "R1"
+  },
+  {
+    "id": "pyo033-s1-gate1-r2",
+    "title": "PYO-033《誰把種子藏起來？》S1 故事設計 Gate1 R2 修訂版",
+    "date": "2026-07-29",
+    "description": "R1 四項修改完成（時間線秋藏春醒/三站預埋橡樹苗+翻轉補完/lock features 去可變狀態/P14 全員同框），主編 R2 10 維全 pass，交 Stacy Green Light",
+    "files": [
+      "PYO-033_S1_gate1_R2.zip"
     ],
     "book": "PYO-033",
     "stage": "S1",
