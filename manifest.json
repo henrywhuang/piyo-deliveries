@@ -558,5 +558,18 @@
     "stage": "S4A",
     "status": "pending",
     "round": "gate4"
+  },
+  {
+    "id": "pyo017-s4a-gate4",
+    "title": "PYO-017《我的斑點不一樣》S4A en-US gate4 證據包",
+    "date": "2026-07-29",
+    "description": "en-US 三檔 draft + QA 二輪（R1 fix_required→R2 復核輪 pass）+ 回譯全量 33 頁 + gate4 證據包。verdict: pass（3 字串級修正已驗證）",
+    "files": [
+      "PYO-017_S4A_en-US.zip"
+    ],
+    "book": "PYO-017",
+    "stage": "S4A",
+    "status": "pending",
+    "round": "gate4"
   }
 ]
