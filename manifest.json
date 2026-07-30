@@ -763,7 +763,7 @@
       ],
       "book": "PYO-032",
       "stage": "S2",
-      "status": "pending",
+      "status": "frozen",
       "round": "R1"
     },
     {
@@ -776,6 +776,19 @@
       ],
       "book": "PYO-034",
       "stage": "S1",
+      "status": "frozen",
+      "round": "GL"
+    },
+    {
+      "id": "pyo032-s2-gl",
+      "title": "PYO-032 S2 分鏡 Green Light",
+      "date": "2026-07-30",
+      "description": "分鏡凍結版（12/11/8 頁）+ pages 回填 + decision 簿記",
+      "files": [
+        "PYO-032_S2_GL.zip"
+      ],
+      "book": "PYO-032",
+      "stage": "S2",
       "status": "frozen",
       "round": "GL"
     }
