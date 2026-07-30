@@ -19,7 +19,8 @@
     "PYO-019": "城市老鼠與鄉下老鼠",
     "PYO-025": "國王的新衣",
     "PYO-029": "狼與七隻小羊",
-    "PYO-033": "誰把種子藏起來？"
+    "PYO-033": "誰把種子藏起來？",
+    "PYO-032": "誰先睡著？"
   },
   "deliveries": [
     {
@@ -670,6 +671,19 @@
       ],
       "book": "PYO-033",
       "stage": "S2",
+      "status": "pending",
+      "round": "R1"
+    },
+    {
+      "id": "pyo032-s1-gate1",
+      "title": "PYO-032《誰先睡著？》S1 故事設計 gate1 審包",
+      "date": "2026-07-30",
+      "description": "故事設計書骨架（concept_contract v1 + 12 beat / 4 幕 / 累加式）＋book.yaml＋QA round1（主編十維盲審 1 輪收斂）＋gate1 整合審閱包。等待 Stacy Green Light。",
+      "files": [
+        "PYO-032_S1_gate1.zip"
+      ],
+      "book": "PYO-032",
+      "stage": "S1",
       "status": "pending",
       "round": "R1"
     }
