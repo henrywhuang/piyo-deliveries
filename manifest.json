@@ -828,8 +828,21 @@
       ],
       "book": "PYO-032",
       "stage": "S3",
-      "status": "pending",
+      "status": "frozen",
       "round": "R1"
+    },
+    {
+      "id": "pyo032-s3-gl",
+      "title": "PYO-032 S3 繁中文案 Green Light",
+      "date": "2026-07-30",
+      "description": "zh-TW 母本三檔定稿（5-6/3-5/2-3）+ gate3 decision + registry 回寫完成",
+      "files": [
+        "PYO-032_S3_GL.zip"
+      ],
+      "book": "PYO-032",
+      "stage": "S3",
+      "status": "frozen",
+      "round": "GL"
     }
   ]
 }
