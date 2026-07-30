@@ -869,6 +869,19 @@
       "stage": "S3",
       "status": "pending",
       "round": "R1"
+    },
+    {
+      "id": "pyo033-s3-r2",
+      "title": "PYO-033 S3 zh-TW R2（Stacy R1 修訂）",
+      "date": "2026-07-30",
+      "description": "橡實→小果子(2-3/3-5)＋P09旁白→角色獨白(5-6)＋round3 QA＋gate3 R2 審包",
+      "files": [
+        "PYO-033_S3_R2.zip"
+      ],
+      "book": "PYO-033",
+      "stage": "S3",
+      "status": "pending",
+      "round": "R2"
     }
   ]
 }
