@@ -750,7 +750,7 @@
       ],
       "book": "PYO-034",
       "stage": "S1",
-      "status": "pending",
+      "status": "frozen",
       "round": "R1"
     },
     {
@@ -765,6 +765,19 @@
       "stage": "S2",
       "status": "pending",
       "round": "R1"
+    },
+    {
+      "id": "pyo034-s1-gl",
+      "title": "PYO-034 S1 故事設計 Green Light《猴子撈月》",
+      "date": "2026-07-30",
+      "description": "R1 一輪通過，Stacy Green Light 凍結版",
+      "files": [
+        "PYO-034_S1_GL.zip"
+      ],
+      "book": "PYO-034",
+      "stage": "S1",
+      "status": "frozen",
+      "round": "GL"
     }
   ]
 }
