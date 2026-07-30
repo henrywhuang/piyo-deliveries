@@ -752,6 +752,19 @@
       "stage": "S1",
       "status": "pending",
       "round": "R1"
+    },
+    {
+      "id": "pyo032-s2-r1",
+      "title": "PYO-032 S2 分鏡 — 關卡②審包",
+      "date": "2026-07-30",
+      "description": "storyboard v0.12（12頁）+ 八維 QA pass + 機檢統計",
+      "files": [
+        "PYO-032_S2_R1.zip"
+      ],
+      "book": "PYO-032",
+      "stage": "S2",
+      "status": "pending",
+      "round": "R1"
     }
   ]
 }
