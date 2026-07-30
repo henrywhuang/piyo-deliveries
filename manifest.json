@@ -618,8 +618,21 @@
       ],
       "book": "PYO-005",
       "stage": "S4A",
-      "status": "pending",
+      "status": "frozen",
       "round": "R2"
+    },
+    {
+      "id": "pyo005-s4a-greenlight",
+      "title": "PYO-005《黑夜裡的小燈》S4A en-US Green Light 凍結版（2026-07-30）",
+      "date": "2026-07-30",
+      "description": "Gate4 GREEN LIGHT 後凍結版：en-US 三檔定稿（.json）＋copy 總表＋gate4_decision＋QA round3＋book.yaml。Registry 3 角色名＋5 擬聲詞定案。WC-1 超限（88.75>88）Stacy 接受。Stage→S4B 多語放量",
+      "files": [
+        "PYO-005_S4A_en-US_GreenLight.zip"
+      ],
+      "book": "PYO-005",
+      "stage": "S4A",
+      "status": "frozen",
+      "round": "GreenLight"
     },
     {
       "id": "pyo019-s4a-gate4-r2",
