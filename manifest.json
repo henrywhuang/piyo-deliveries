@@ -791,6 +791,19 @@
       "stage": "S2",
       "status": "frozen",
       "round": "GL"
+    },
+    {
+      "id": "pyo034-s2-r1",
+      "title": "PYO-034 S2 分鏡 — 關卡②審包",
+      "date": "2026-07-30",
+      "description": "v0.12 十三欄分鏡總表（12頁母版）+ 八維自審 pass + gate2 審閱檔",
+      "files": [
+        "PYO-034_S2_R1.zip"
+      ],
+      "book": "PYO-034",
+      "stage": "S2",
+      "status": "pending",
+      "round": "R1"
     }
   ]
 }
