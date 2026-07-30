@@ -802,8 +802,21 @@
       ],
       "book": "PYO-034",
       "stage": "S2",
-      "status": "pending",
+      "status": "frozen",
       "round": "R1"
+    },
+    {
+      "id": "pyo034-s2-gl",
+      "title": "PYO-034 S2 分鏡 Green Light",
+      "date": "2026-07-30",
+      "description": "分鏡凍結版：storyboard v0.12 + pages 回填 + gate2_decision",
+      "files": [
+        "PYO-034_S2_GL.zip"
+      ],
+      "book": "PYO-034",
+      "stage": "S2",
+      "status": "frozen",
+      "round": "GL"
     }
   ]
 }
