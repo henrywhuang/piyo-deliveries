@@ -684,7 +684,7 @@
       ],
       "book": "PYO-032",
       "stage": "S1",
-      "status": "pending",
+      "status": "frozen",
       "round": "R1"
     },
     {
@@ -710,7 +710,7 @@
       ],
       "book": "PYO-032",
       "stage": "S1",
-      "status": "pending",
+      "status": "frozen",
       "round": "R2"
     },
     {
@@ -725,6 +725,19 @@
       "stage": "S2",
       "status": "pending",
       "round": "R2"
+    },
+    {
+      "id": "pyo032-s1-greenlight",
+      "title": "PYO-032《誰先睡著？》S1 Green Light",
+      "date": "2026-07-30",
+      "description": "Stacy Green Light（R2）。四維度全✓。Bitable Stage → S2 分鏡設計。",
+      "files": [
+        "PYO-032_S1_greenlight.zip"
+      ],
+      "book": "PYO-032",
+      "stage": "S1",
+      "status": "frozen",
+      "round": "greenlight"
     }
   ]
 }
