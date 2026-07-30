@@ -6,7 +6,7 @@
 <title>Piyo Deliveries</title>
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%23FF9B50'/%3E%3Cellipse cx='32' cy='36' rx='18' ry='16' fill='%23FFD93D'/%3E%3Cellipse cx='32' cy='28' rx='14' ry='13' fill='%23FFE066'/%3E%3Ccircle cx='26' cy='26' r='2.5' fill='%23333'/%3E%3Ccircle cx='38' cy='26' r='2.5' fill='%23333'/%3E%3Cpolygon points='32,30 28,34 36,34' fill='%23FF6B35'/%3E%3C/svg%3E">
 <style>
-  :root { --primary: #FF9B50; --bg: #FFF8F0; --card: #FFFFFF; --text: #333; --muted: #888; --border: #F0E6D8; --pending: #E8F5E9; --pending-text: #2E7D32; --frozen: #F3F4F6; --frozen-text: #6B7280; }
+  :root { --primary: #FF9B50; --bg: #FFF8F0; --card: #FFFFFF; --text: #333; --muted: #888; --border: #F0E6D8; --pending-text: #2E7D32; --frozen-text: #6B7280; }
   * { margin: 0; padding: 0; box-sizing: border-box; }
   body { font-family: -apple-system, "Helvetica Neue", Arial, sans-serif; background: var(--bg); color: var(--text); min-height: 100vh; }
   header { background: var(--primary); color: #fff; padding: 20px 24px; }
@@ -16,6 +16,7 @@
   main { max-width: 800px; margin: 0 auto; padding: 16px; }
   .search-bar { width: 100%; padding: 10px 14px; border: 1px solid var(--border); border-radius: 8px; font-size: 14px; background: var(--card); outline: none; margin-bottom: 20px; }
   .search-bar:focus { border-color: var(--primary); box-shadow: 0 0 0 2px rgba(255,155,80,0.15); }
+
   .section { margin-bottom: 24px; }
   .section-header { display: flex; align-items: center; gap: 8px; margin-bottom: 10px; cursor: pointer; user-select: none; }
   .section-title { font-size: 15px; font-weight: 600; }
@@ -23,28 +24,38 @@
   .section-toggle { font-size: 11px; color: var(--muted); transition: transform 0.2s; }
   .section-toggle.collapsed { transform: rotate(-90deg); }
   .section-body.hidden { display: none; }
+
   .book-group { background: var(--card); border: 1px solid var(--border); border-radius: 8px; margin-bottom: 8px; overflow: hidden; }
-  .book-header { display: flex; align-items: center; padding: 10px 14px; cursor: pointer; user-select: none; gap: 10px; }
+  .book-header { display: flex; align-items: center; padding: 10px 14px; cursor: pointer; user-select: none; gap: 8px; flex-wrap: wrap; }
   .book-header:hover { background: #FAFAF5; }
-  .book-id { font-size: 13px; font-weight: 700; color: var(--primary); min-width: 64px; }
-  .book-stage { font-size: 12px; font-weight: 500; background: #FFF0E0; color: #B86E00; border-radius: 4px; padding: 1px 6px; }
-  .book-latest { font-size: 13px; flex: 1; color: #555; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-  .book-date { font-size: 12px; color: var(--muted); min-width: 80px; text-align: right; }
-  .book-expand { font-size: 10px; color: var(--muted); transition: transform 0.2s; }
+  .book-id { font-size: 13px; font-weight: 700; color: var(--primary); min-width: 60px; }
+  .book-name { font-size: 13px; color: #555; flex: 1; min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .book-stage-badge { font-size: 11px; font-weight: 600; background: #FFF0E0; color: #B86E00; border-radius: 4px; padding: 1px 6px; }
+  .book-expand { font-size: 10px; color: var(--muted); transition: transform 0.2s; margin-left: auto; }
   .book-expand.open { transform: rotate(90deg); }
-  .book-rows { border-top: 1px solid var(--border); display: none; }
-  .book-rows.open { display: block; }
-  .row { display: flex; align-items: center; padding: 8px 14px 8px 28px; gap: 10px; border-bottom: 1px solid var(--border); }
-  .row:last-child { border-bottom: none; }
-  .row-round { font-size: 12px; font-weight: 500; min-width: 56px; color: var(--muted); }
-  .row-title { font-size: 13px; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-  .row-date { font-size: 12px; color: var(--muted); min-width: 80px; text-align: right; }
-  .row-dl { display: flex; gap: 4px; }
-  .dl-btn { display: inline-block; background: var(--primary); color: #fff; text-decoration: none; padding: 3px 10px; border-radius: 5px; font-size: 12px; font-weight: 500; transition: opacity 0.15s; white-space: nowrap; }
+  .book-detail { border-top: 1px solid var(--border); display: none; }
+  .book-detail.open { display: block; }
+
+  .stage-group { border-bottom: 1px solid var(--border); }
+  .stage-group:last-child { border-bottom: none; }
+  .stage-label { font-size: 12px; font-weight: 600; color: var(--primary); padding: 6px 14px 2px 18px; background: #FFFAF5; letter-spacing: 0.3px; }
+  .row { display: flex; align-items: center; padding: 6px 14px 6px 32px; gap: 8px; }
+  .round-badge { font-size: 11px; font-weight: 600; min-width: 32px; text-align: center; padding: 1px 6px; border-radius: 4px; background: #F3F4F6; color: #555; }
+  .round-badge.gl { background: #D1FAE5; color: #065F46; }
+  .row-title { font-size: 13px; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; color: #555; }
+  .row-date { font-size: 12px; color: var(--muted); min-width: 76px; text-align: right; }
+  .dl-btn { display: inline-block; background: var(--primary); color: #fff; text-decoration: none; padding: 2px 10px; border-radius: 5px; font-size: 12px; font-weight: 500; transition: opacity 0.15s; white-space: nowrap; }
   .dl-btn:hover { opacity: 0.85; }
+
   .status-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
   .status-dot.pending { background: var(--pending-text); }
   .status-dot.frozen { background: #D1D5DB; }
+  .status-dot.deprecated { background: #E5E7EB; }
+
+  .section.deprecated .book-group { opacity: 0.65; }
+  .section.deprecated .book-header:hover { background: #F9FAFB; }
+  .section.deprecated .stage-label { background: #F9FAFB; color: var(--muted); }
+
   .no-results { text-align: center; color: var(--muted); padding: 32px 0; font-size: 14px; }
   .misc-card { background: var(--card); border: 1px solid var(--border); border-radius: 8px; padding: 12px 14px; margin-bottom: 8px; display: flex; align-items: center; gap: 10px; }
   .misc-card .row-title { font-weight: 500; }
@@ -58,13 +69,18 @@
   </div>
 </header>
 <main>
-  <input class="search-bar" type="text" id="search" placeholder="搜尋書號、站別、描述…（如 PYO-013、S4、gate4）">
+  <input class="search-bar" type="text" id="search" placeholder="搜尋書號、站別、描述…（如 PYO-017、S4A、gate4）">
   <div id="app"></div>
 </main>
 <script>
+const STAGE_ORDER = ['S1','S2','S3','S4A','S4B','S5','S6'];
+const STAGE_NAMES = {S1:'故事設計',S2:'分鏡',S3:'繁中文案',S4A:'英文文案','S4B':'多語放量',S5:'資源拆解',S6:'資源生成'};
+
 fetch('manifest.json')
   .then(r => r.json())
-  .then(items => {
+  .then(data => {
+    const bookNames = data.bookNames || {};
+    const items = data.deliveries || data;
     const app = document.getElementById('app');
     const searchEl = document.getElementById('search');
     const statsEl = document.getElementById('stats');
@@ -73,17 +89,18 @@ fetch('manifest.json')
       const q = (query || '').toLowerCase();
       const filtered = items.filter(it => {
         if (!q) return true;
-        return [it.id, it.title, it.description, it.book, it.stage, it.round, it.status]
+        const bn = bookNames[it.book] || '';
+        return [it.id, it.title, it.description, it.book, it.stage, it.round, it.status, bn]
           .filter(Boolean).some(s => s.toLowerCase().includes(q));
       });
 
-      const pending = filtered.filter(it => it.status === 'pending');
-      const frozen = filtered.filter(it => it.status === 'frozen');
+      const pending = filtered.filter(it => it.status === 'pending' && it.book);
+      const frozen = filtered.filter(it => it.status === 'frozen' && it.book);
+      const deprecated = filtered.filter(it => it.status === 'deprecated' && it.book);
       const misc = filtered.filter(it => !it.book);
-      const bookPending = pending.filter(it => it.book);
-      const bookFrozen = frozen.filter(it => it.book);
 
-      statsEl.textContent = items.length + ' deliveries';
+      const active = filtered.filter(it => it.status !== 'deprecated');
+      statsEl.textContent = active.length + ' active / ' + items.length + ' total';
 
       if (!filtered.length) {
         app.innerHTML = '<p class="no-results">沒有符合「' + esc(q) + '」的交付物</p>';
@@ -91,13 +108,9 @@ fetch('manifest.json')
       }
 
       let html = '';
-
-      if (bookPending.length) {
-        html += buildSection('待審 / 進行中', bookPending, 'pending', false);
-      }
-      if (bookFrozen.length) {
-        html += buildSection('已凍結', bookFrozen, 'frozen', !bookPending.length ? false : true);
-      }
+      if (pending.length) html += buildSection('待審', pending, 'pending', false);
+      if (frozen.length) html += buildSection('已凍結', frozen, 'frozen', pending.length > 0);
+      if (deprecated.length) html += buildSection('已廢棄', deprecated, 'deprecated', true);
       if (misc.length) {
         html += '<div class="section"><div class="section-header"><span class="section-title">其他</span>' +
           '<span class="section-count">' + misc.length + '</span></div><div class="section-body">';
@@ -107,7 +120,7 @@ fetch('manifest.json')
           ).join('');
           html += '<div class="misc-card"><span class="row-title">' + esc(it.title) + '</span>' +
             '<span class="row-date">' + it.date + '</span>' +
-            '<div class="row-dl">' + files + '</div></div>';
+            '<div style="display:flex;gap:4px">' + files + '</div></div>';
         });
         html += '</div></div>';
       }
@@ -122,10 +135,10 @@ fetch('manifest.json')
         if (!byBook[it.book]) byBook[it.book] = [];
         byBook[it.book].push(it);
       });
-      Object.values(byBook).forEach(arr => arr.sort((a, b) => b.date.localeCompare(a.date)));
       const books = Object.keys(byBook).sort();
 
-      let html = '<div class="section"><div class="section-header" data-section-toggle>' +
+      let html = '<div class="section ' + statusClass + '">' +
+        '<div class="section-header" data-section-toggle>' +
         '<span class="section-toggle' + (startCollapsed ? ' collapsed' : '') + '">&#9660;</span>' +
         '<span class="section-title">' + label + '</span>' +
         '<span class="section-count">' + books.length + ' books / ' + entries.length + ' items</span></div>' +
@@ -133,40 +146,48 @@ fetch('manifest.json')
 
       books.forEach(bookId => {
         const rows = byBook[bookId];
-        const latest = rows[0];
-        const hasMultiple = rows.length > 1;
-        html += '<div class="book-group">';
-        html += '<div class="book-header"' + (hasMultiple ? ' data-book-toggle' : '') + '>' +
-          '<span class="status-dot ' + statusClass + '"></span>' +
-          '<span class="book-id">' + esc(bookId) + '</span>' +
-          '<span class="book-stage">' + esc(latest.stage) + '</span>' +
-          '<span class="book-latest">' + esc(latest.title) + '</span>' +
-          '<span class="book-date">' + latest.date + '</span>';
-        if (hasMultiple) {
-          html += '<span class="book-expand">&#9654; ' + rows.length + '</span>';
-        } else {
-          const files = (latest.files || []).map(f =>
-            '<a class="dl-btn" href="' + latest.id + '/' + esc(f) + '" download>ZIP</a>'
-          ).join('');
-          html += '<div class="row-dl">' + files + '</div>';
-        }
-        html += '</div>';
+        const highestStage = rows.map(r => r.stage).sort((a, b) =>
+          STAGE_ORDER.indexOf(b) - STAGE_ORDER.indexOf(a))[0];
+        const bn = bookNames[bookId];
+        const nameStr = bn ? esc(bookId) + '《' + esc(bn) + '》' : esc(bookId);
 
-        if (hasMultiple) {
-          html += '<div class="book-rows">';
-          rows.forEach(it => {
+        const byStage = {};
+        rows.forEach(r => {
+          const s = r.stage || '—';
+          if (!byStage[s]) byStage[s] = [];
+          byStage[s].push(r);
+        });
+        const stages = Object.keys(byStage).sort((a, b) =>
+          STAGE_ORDER.indexOf(a) - STAGE_ORDER.indexOf(b));
+        stages.forEach(s => byStage[s].sort((a, b) => a.date.localeCompare(b.date)));
+
+        html += '<div class="book-group">';
+        html += '<div class="book-header" data-book-toggle>' +
+          '<span class="status-dot ' + statusClass + '"></span>' +
+          '<span class="book-id">' + nameStr + '</span>' +
+          '<span class="book-stage-badge">' + esc(highestStage) + '</span>' +
+          '<span class="book-expand">&#9654; ' + rows.length + '</span></div>';
+
+        html += '<div class="book-detail">';
+        stages.forEach(stg => {
+          const sName = STAGE_NAMES[stg] || '';
+          html += '<div class="stage-group">';
+          html += '<div class="stage-label">' + esc(stg) + (sName ? ' ' + esc(sName) : '') + '</div>';
+          byStage[stg].forEach(it => {
+            const rd = it.round || '—';
+            const isGL = rd === 'GL';
             const files = (it.files || []).map(f =>
-              '<a class="dl-btn" href="' + it.id + '/' + esc(f) + '" download>' + esc(f) + '</a>'
+              '<a class="dl-btn" href="' + it.id + '/' + esc(f) + '" download>ZIP</a>'
             ).join('');
             html += '<div class="row">' +
-              '<span class="row-round">' + esc(it.round || '-') + '</span>' +
-              '<span class="row-title">' + esc(it.title) + '</span>' +
+              '<span class="round-badge' + (isGL ? ' gl' : '') + '">' + esc(rd) + '</span>' +
+              '<span class="row-title" title="' + esc(it.description || it.title) + '">' + esc(it.title) + '</span>' +
               '<span class="row-date">' + it.date + '</span>' +
-              '<div class="row-dl">' + files + '</div></div>';
+              '<div style="display:flex;gap:4px">' + files + '</div></div>';
           });
           html += '</div>';
-        }
-        html += '</div>';
+        });
+        html += '</div></div>';
       });
 
       html += '</div></div>';
@@ -182,18 +203,16 @@ fetch('manifest.json')
     function bindEvents() {
       document.querySelectorAll('[data-section-toggle]').forEach(el => {
         el.onclick = () => {
-          const arrow = el.querySelector('.section-toggle');
-          const body = el.nextElementSibling;
-          arrow.classList.toggle('collapsed');
-          body.classList.toggle('hidden');
+          el.querySelector('.section-toggle').classList.toggle('collapsed');
+          el.nextElementSibling.classList.toggle('hidden');
         };
       });
       document.querySelectorAll('[data-book-toggle]').forEach(el => {
         el.onclick = (e) => {
           if (e.target.closest('.dl-btn')) return;
-          const rows = el.nextElementSibling;
+          const detail = el.nextElementSibling;
           const expand = el.querySelector('.book-expand');
-          rows.classList.toggle('open');
+          detail.classList.toggle('open');
           if (expand) expand.classList.toggle('open');
         };
       });

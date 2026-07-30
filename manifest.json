@@ -580,7 +580,7 @@
       ],
       "book": "PYO-005",
       "stage": "S4A",
-      "status": "pending",
+      "status": "frozen",
       "round": "R1"
     },
     {
@@ -633,7 +633,7 @@
       "book": "PYO-005",
       "stage": "S4A",
       "status": "frozen",
-      "round": "GreenLight"
+      "round": "GL"
     },
     {
       "id": "pyo019-s4a-gate4-r2",
