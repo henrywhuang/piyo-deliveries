@@ -593,7 +593,7 @@
       ],
       "book": "PYO-017",
       "stage": "S4A",
-      "status": "pending",
+      "status": "frozen",
       "round": "R1"
     },
     {
@@ -658,7 +658,7 @@
       ],
       "book": "PYO-017",
       "stage": "S4A",
-      "status": "pending",
+      "status": "frozen",
       "round": "R2"
     },
     {
@@ -686,6 +686,19 @@
       "stage": "S1",
       "status": "pending",
       "round": "R1"
+    },
+    {
+      "id": "pyo017-s4a-gl",
+      "title": "PYO-017 S4A en-US Green Light — 定稿凍結",
+      "date": "2026-07-30",
+      "description": "三檔 en-US 定稿 + gate4 decision + book.yaml s4a_frozen",
+      "files": [
+        "PYO-017_S4A_GL.zip"
+      ],
+      "book": "PYO-017",
+      "stage": "S4A",
+      "status": "frozen",
+      "round": "GL"
     }
   ]
 }
