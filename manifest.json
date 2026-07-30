@@ -576,13 +576,13 @@
     "id": "pyo019-s4a-gate4",
     "title": "PYO-019《城市老鼠與鄉下老鼠》S4A en-US gate4 證據包",
     "date": "2026-07-29",
-    "description": "en-US 三檔 draft + QA 一輪 pass（checklist 24/0、ESL 0 筆、concept fidelity 全過）+ 回譯全量 30 頁（0 中度偏移）+ gate4 證據包。等待 Stacy 證據審 Green Light",
+    "description": "R1 原版（已被 R2 取代）。en-US 三檔 draft + QA pass + 回譯 30 頁",
     "files": [
       "PYO-019_S4A_en-US.zip"
     ],
     "book": "PYO-019",
     "stage": "S4A",
-    "status": "pending",
+    "status": "frozen",
     "round": "gate4"
   },
   {
@@ -594,6 +594,19 @@
       "PYO-005_S4A_en-US_R2.zip"
     ],
     "book": "PYO-005",
+    "stage": "S4A",
+    "status": "pending",
+    "round": "R2"
+  },
+  {
+    "id": "pyo019-s4a-gate4-r2",
+    "title": "PYO-019《城市老鼠與鄉下老鼠》S4A en-US gate4 R2",
+    "date": "2026-07-30",
+    "description": "R1 三處修改：5-6 P02/P07 + 3-5 P07 冠詞/主語修正；registry Nibble/Glitz + 5 擬聲詞 Stacy 確認。等待 Green Light",
+    "files": [
+      "PYO-019_S4A_en-US_R2.zip"
+    ],
+    "book": "PYO-019",
     "stage": "S4A",
     "status": "pending",
     "round": "R2"
