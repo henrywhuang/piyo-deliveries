@@ -712,6 +712,19 @@
       "stage": "S1",
       "status": "pending",
       "round": "R2"
+    },
+    {
+      "id": "pyo033-s2-gate2-r2",
+      "title": "PYO-033《誰把種子藏起來？》S2 分鏡 gate2 R2（Stacy R1 四項修改落地）",
+      "date": "2026-07-30",
+      "description": "R1 四項修改：P07 焦點三層→兩層＋花果期矛盾修復、P08 版面升 full-bleed、P11 2-3 疊句變奏承接、P13 手部矛盾消除。機檢零警告、八維 pass。等待 Green Light。",
+      "files": [
+        "PYO-033_S2_gate2_R2.zip"
+      ],
+      "book": "PYO-033",
+      "stage": "S2",
+      "status": "pending",
+      "round": "R2"
     }
   ]
 }
