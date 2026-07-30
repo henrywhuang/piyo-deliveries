@@ -610,5 +610,18 @@
     "stage": "S4A",
     "status": "pending",
     "round": "R2"
+  },
+  {
+    "id": "pyo017-s4a-gate4-r2",
+    "title": "PYO-017《我的斑點不一樣》S4A en-US R2（Stacy R1 五項修改落地）",
+    "date": "2026-07-30",
+    "description": "Stacy R1 五項修改精確落地（5-6 P02 spot + 2-3 P05/P11/P12/P13）+ registry 補登 + 回譯 5 頁重譯 + gate4 重生成。2-3 lint 3 項超限＝Stacy 增字造成，原樣保留。",
+    "files": [
+      "PYO-017_S4A_en-US_R2.zip"
+    ],
+    "book": "PYO-017",
+    "stage": "S4A",
+    "status": "pending",
+    "round": "R2"
   }
 ]
