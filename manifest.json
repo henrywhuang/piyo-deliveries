@@ -699,6 +699,19 @@
       "stage": "S4A",
       "status": "frozen",
       "round": "GL"
+    },
+    {
+      "id": "pyo032-s1-gate1-r2",
+      "title": "PYO-032《誰先睡著？》S1 故事設計 gate1 R2",
+      "date": "2026-07-30",
+      "description": "Stacy R1 修改指令回應：(1) 毛毛 lock features 刪 bilaterally symmetrical（右耳蝴蝶結≠對稱）；(2) 收束語改純場景描述（呼嚕＋噗嚕＋暖暖），刪旁白判斷句。機檢 exit 0。",
+      "files": [
+        "PYO-032_S1_gate1_R2.zip"
+      ],
+      "book": "PYO-032",
+      "stage": "S1",
+      "status": "pending",
+      "round": "R2"
     }
   ]
 }
