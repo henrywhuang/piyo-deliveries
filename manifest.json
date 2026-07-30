@@ -1,627 +1,664 @@
-[
-  {
-    "id": "bitable-workbench",
-    "title": "Bitable 工作台設定",
-    "date": "2026-07-09",
-    "description": "Bitable schema 提案 + 三本種子書重置 + 工作表配置",
-    "files": [
-      "bitable_workbench.zip"
-    ],
-    "book": "",
-    "stage": "",
-    "status": "frozen",
-    "round": ""
+{
+  "bookNames": {
+    "PYO-001": "三隻小豬",
+    "PYO-002": "龜兔賽跑",
+    "PYO-003": "金髮女孩與三隻熊",
+    "PYO-004": "等一下，小火山",
+    "PYO-005": "黑夜裡的小燈",
+    "PYO-006": "雷聲在打鼓",
+    "PYO-007": "豌豆公主",
+    "PYO-008": "北風與太陽",
+    "PYO-009": "一口就好",
+    "PYO-010": "打嗝停不下來",
+    "PYO-011": "輪到你，輪到我",
+    "PYO-012": "獅子與老鼠",
+    "PYO-013": "拔蘿蔔",
+    "PYO-014": "我不要穿那件！",
+    "PYO-015": "換我先！",
+    "PYO-017": "我的斑點不一樣",
+    "PYO-019": "城市老鼠與鄉下老鼠",
+    "PYO-025": "國王的新衣",
+    "PYO-029": "狼與七隻小羊",
+    "PYO-033": "誰把種子藏起來？"
   },
-  {
-    "id": "pyo011-s3-r2",
-    "title": "PYO-011 S3 繁中文案 R2（2026-07-21，覆蓋 R1）",
-    "date": "2026-07-21",
-    "description": "Stacy 親審後去編稿腔＋修正 P11 對白歸屬，第二輪交付",
-    "files": [
-      "PYO-011_S3_zh-TW_R2.zip"
-    ],
-    "book": "PYO-011",
-    "stage": "S3",
-    "status": "frozen",
-    "round": "R2"
-  },
-  {
-    "id": "pyo011-s3-greenlight",
-    "title": "PYO-011 S3 繁中文案 Green Light 凍結版（2026-07-21）",
-    "date": "2026-07-21",
-    "description": "Gate3 GREEN LIGHT 後凍結版：zh-TW 三檔定稿（.json）＋copy 總表＋gate3_decision＋QA 報告＋book.yaml——覆蓋 R2",
-    "files": [
-      "PYO-011_S3_zh-TW_GreenLight.zip"
-    ],
-    "book": "PYO-011",
-    "stage": "S3",
-    "status": "frozen",
-    "round": "greenlight"
-  },
-  {
-    "id": "pyo014-s3-gate3",
-    "title": "PYO-014 S3 繁中文案 Gate3 審包",
-    "date": "2026-07-21",
-    "description": "《阿嬤的圍裙口袋》S3 重做完整交付：三檔文案＋copy 總表＋QA 三輪報告＋gate3 整合審包，等待 Stacy 親審 Green Light",
-    "files": [
-      "PYO-014_S3_zh-TW.zip"
-    ],
-    "book": "PYO-014",
-    "stage": "S3",
-    "status": "frozen",
-    "round": "R1"
-  },
-  {
-    "id": "pyo014-s3-r2",
-    "title": "PYO-014 S3 繁中文案 R2（Stacy R1 修訂後重審）",
-    "date": "2026-07-21",
-    "description": "《阿嬤的圍裙口袋》S3 Gate3 R2：依 Stacy R1 四維度修改（痕跡→記號/印子＋做過/走過→留的＋P03 因果拆兩拍＋P06 去擬人），三檔文案＋copy 總表＋QA 報告＋gate3 R2 審包",
-    "files": [
-      "PYO-014_S3_zh-TW_R2.zip"
-    ],
-    "book": "PYO-014",
-    "stage": "S3",
-    "status": "frozen",
-    "round": "R2"
-  },
-  {
-    "id": "pyo014-s3-greenlight",
-    "title": "PYO-014 S3 繁中文案 Green Light 凍結版（2026-07-21）",
-    "date": "2026-07-21",
-    "description": "Gate3 GREEN LIGHT 後凍結版：zh-TW 三檔定稿（.json）＋copy 總表＋gate3_decision＋QA 報告＋book.yaml——覆蓋 R2",
-    "files": [
-      "PYO-014_S3_zh-TW_GreenLight.zip"
-    ],
-    "book": "PYO-014",
-    "stage": "S3",
-    "status": "frozen",
-    "round": "greenlight"
-  },
-  {
-    "id": "pyo015-s3-r2",
-    "title": "PYO-015 S3 繁中文案 R3（R2 單項標點修正後重審）",
-    "date": "2026-07-21",
-    "description": "《誰把種子藏起來？》S3 Gate3 R3：R2 僅一處品牌合規標點修正（2-3 P05 問句加引號歸屬栗栗），四維度全通過",
-    "files": [
-      "PYO-015_S3_zh-TW_R2.zip",
-      "PYO-015_S3_zh-TW_R3.zip"
-    ],
-    "book": "PYO-015",
-    "stage": "S3",
-    "status": "frozen",
-    "round": "R3"
-  },
-  {
-    "id": "pyo006-s4b-localize",
-    "title": "PYO-006 S4B 六語放量凍結版（2026-07-21）",
-    "date": "2026-07-21",
-    "description": "《擔心口袋裡有什麼？》六語文案凍結：ja/en-GB/es-MX/pt-BR/th-TH/vi-VN × 3 tiers = 18 定稿 + copy 總表 + QA 證據包 + registry 更新",
-    "files": [
-      "PYO-006_S4B_6lang.zip"
-    ],
-    "book": "PYO-006",
-    "stage": "S4B",
-    "status": "frozen",
-    "round": "greenlight"
-  },
-  {
-    "id": "pyo015-s3-greenlight",
-    "title": "PYO-015 S3 繁中文案 Green Light 準備包",
-    "date": "2026-07-22",
-    "description": "《誰把種子藏起來？》Gate3 GREENLIT：zh-TW 三檔 draft＋copy 總表＋QA 五輪報告＋gate3 審包——供 Stacy 本機 Green Light 收尾",
-    "files": [
-      "PYO-015_S3_zh-TW_GreenLight_prep.zip"
-    ],
-    "book": "PYO-015",
-    "stage": "S3",
-    "status": "frozen",
-    "round": "greenlight"
-  },
-  {
-    "id": "pyo008-s4b-localize",
-    "title": "PYO-008 S4B 六語放量凍結版（2026-07-22）",
-    "date": "2026-07-22",
-    "description": "《小天鵝慢慢長大》六語文案凍結：ja/en-GB/es-MX/pt-BR/th-TH/vi-VN × 3 tiers = 18 定稿 + copy 總表 + QA 證據包 + registry 更新",
-    "files": [
-      "PYO-008_S4B_6lang.zip"
-    ],
-    "book": "PYO-008",
-    "stage": "S4B",
-    "status": "frozen",
-    "round": "greenlight"
-  },
-  {
-    "id": "pyo002-s4b-localize",
-    "title": "PYO-002 S4B 六語放量審稿版（2026-07-22）",
-    "date": "2026-07-22",
-    "description": "《龜兔賽跑》六語文案 draft：ja/en-GB/es-MX/pt-BR/th-TH/vi-VN × 3 tiers = 18 draft + copy 總表 + QA 證據包 + B0 rulings",
-    "files": [
-      "PYO-002_S4B_6lang.zip"
-    ],
-    "book": "PYO-002",
-    "stage": "S4B",
-    "status": "pending",
-    "round": "R1"
-  },
-  {
-    "id": "pyo008-s4-review",
-    "title": "PYO-008《小天鵝慢慢長大》S4 文字審查包（R1/R2/R3 + gate4 QA）",
-    "date": "2026-07-22",
-    "description": "三輪文字審查報告（R1 不通過、R2 修改指令、R3 Greenlight）＋ gate4 en-US 審包 QA 核驗",
-    "files": [
-      "PYO-008_S4_review.zip"
-    ],
-    "book": "PYO-008",
-    "stage": "S4A",
-    "status": "frozen",
-    "round": "greenlight"
-  },
-  {
-    "id": "pyo009-s4-gate4",
-    "title": "PYO-009《我有我的小光》S4 gate4 五維度審包＋色盤分析",
-    "date": "2026-07-22",
-    "description": "gate4 en-US 五維度審查（初版 + R2）＋ Opus 色盤專家分析",
-    "files": [
-      "PYO-009_S4_gate4_review.zip"
-    ],
-    "book": "PYO-009",
-    "stage": "S4A",
-    "status": "pending",
-    "round": "R2"
-  },
-  {
-    "id": "pyo012-s4-review",
-    "title": "PYO-012《獅子與老鼠》S4 文字審查包（R1 Greenlight + locale 稽核 + 微修指令）",
-    "date": "2026-07-22",
-    "description": "R1 greenlight + 翻譯腔／local 語感專項稽核 + 微修指令單＋ gate4 QA",
-    "files": [
-      "PYO-012_S4_review.zip"
-    ],
-    "book": "PYO-012",
-    "stage": "S4A",
-    "status": "frozen",
-    "round": "greenlight"
-  },
-  {
-    "id": "pyo013-s4-review",
-    "title": "PYO-013《拔蘿蔔》S4 文字審查包（R1 Greenlight + gate4 QA）",
-    "date": "2026-07-22",
-    "description": "R1 五維度全通過 Greenlight ＋ gate4 en-US 審包核驗",
-    "files": [
-      "PYO-013_S4_review.zip"
-    ],
-    "book": "PYO-013",
-    "stage": "S4A",
-    "status": "frozen",
-    "round": "greenlight"
-  },
-  {
-    "id": "pyo010-s4a-en-us-gate4",
-    "title": "PYO-010《不一樣的斑點》S4A en-US gate4 證據包",
-    "date": "2026-07-22",
-    "description": "en-US 三檔 draft + QA 二輪收斂（復核輪）+ 回譯全量 38 頁 + gate4 證據包，待 Stacy 證據審 Green Light",
-    "files": [
-      "PYO-010_S4A_en-US.zip"
-    ],
-    "book": "PYO-010",
-    "stage": "S4A",
-    "status": "pending",
-    "round": "gate4"
-  },
-  {
-    "id": "pyo015-s4a-gate4",
-    "title": "PYO-015 S4A en-US Gate4 證據審包（2026-07-22）",
-    "date": "2026-07-22",
-    "description": "《誰把種子藏起來？》S4A en-US 三檔 draft + QA 二輪 + gate4 證據包 + 回譯全量 + registry 提案，等待 Stacy 證據審 Green Light",
-    "files": [
-      "PYO-015_S4A_en-US.zip"
-    ],
-    "book": "PYO-015",
-    "stage": "S4A",
-    "status": "pending",
-    "round": "gate4"
-  },
-  {
-    "id": "pyo011-s4a-en-us-gate4",
-    "title": "PYO-011《輪到你，輪到我》S4A en-US gate④ 交審",
-    "date": "2026-07-22",
-    "description": "en-US 三檔 draft + QA 二輪(復核輪) + 回譯 31 頁 + gate4 證據包。⏸️ E-2 高潮偏移待裁定。",
-    "files": [
-      "PYO-011_S4A_en-US.zip"
-    ],
-    "book": "PYO-011",
-    "stage": "S4A",
-    "status": "pending",
-    "round": "R2"
-  },
-  {
-    "id": "pyo010-s4-r2",
-    "title": "PYO-010《不一樣的斑點》S4A en-US R2 審查包（6 必改落地 + F03-F06 裁定 + registry 回寫）",
-    "date": "2026-07-23",
-    "description": "S4 R1 六項必改落地 + 回譯 6 頁同步 + gate4_en-US_review.md 重生成 + F03-F06 裁定 + registry 回寫 + B-4 例外 + 機檢全綠",
-    "files": [
-      "PYO-010_S4A_en-US_R2.zip"
-    ],
-    "book": "PYO-010",
-    "stage": "S4A",
-    "status": "pending",
-    "round": "R2"
-  },
-  {
-    "id": "pyo015-s4-r2",
-    "title": "PYO-015 S4 R2 修改重審",
-    "date": "2026-07-23",
-    "description": "S4 R1 五維審修改落地：gate4 證據包已用 R1 後文本重生（7/23）+ 回譯同步 + 機檢報告",
-    "files": [
-      "PYO-015_S4_R2.zip"
-    ],
-    "book": "PYO-015",
-    "stage": "S4A",
-    "status": "pending",
-    "round": "R2"
-  },
-  {
-    "id": "pyo011-s4a-r2",
-    "title": "PYO-011《輪到你，輪到我》S4A en-US gate4 R2",
-    "date": "2026-07-23",
-    "description": "Stacy 指示 15+ 項修改＋E-2 Option A「I want to watch you swing!」落地，機檢全綠，回譯 3 中度→輕微/無",
-    "files": [
-      "PYO-011_S4A_en-US_R2.zip"
-    ],
-    "book": "PYO-011",
-    "stage": "S4A",
-    "status": "pending",
-    "round": "R2"
-  },
-  {
-    "id": "pyo011-s4a-r3",
-    "title": "PYO-011 S4A en-US R3（P07 指示修改＋附件）",
-    "date": "2026-07-23",
-    "description": "R3：Stacy R2 審稿 1 項文字修改（2-3 P07）＋Registry 確認＋Lint 21 項 warnings 明細",
-    "files": [
-      "PYO-011_S4A_en-US_R3.zip"
-    ],
-    "book": "PYO-011",
-    "stage": "S4A",
-    "status": "pending",
-    "round": "R3"
-  },
-  {
-    "id": "pyo010-s4-r3",
-    "title": "PYO-010《不一樣的斑點》S4A en-US R3（三檔補圓圓台詞＋2-3 budget trim）",
-    "date": "2026-07-23",
-    "description": "R3：Stacy R2 必修——高潮頁三檔補圓圓台詞（zh「那邊有亮亮的！」）；2-3 action beat 歸因＋P01 trim 控 max_total_len 87.25/88；回譯 4 頁重譯＋gate4 重生成＋機檢全綠",
-    "files": [
-      "PYO-010_S4A_en-US_R3.zip"
-    ],
-    "book": "PYO-010",
-    "stage": "S4A",
-    "status": "pending",
-    "round": "R3"
-  },
-  {
-    "id": "pyo008-s1-gate1",
-    "title": "PYO-008 S1 故事設計 Gate1 審包（重做版）",
-    "date": "2026-07-25",
-    "description": "《小天鵝慢慢長大》重做 S1：design.md＋book.yaml＋QA round1（十維 pass）＋gate1 審包，等待 Stacy Green Light",
-    "files": [
-      "PYO-008_S1_gate1.zip"
-    ],
-    "book": "PYO-008",
-    "stage": "S1",
-    "status": "pending",
-    "round": "gate1"
-  },
-  {
-    "id": "pyo005-s1-gate1",
-    "title": "PYO-005《黑夜裡的小燈》S1 Green Light",
-    "date": "2026-07-28",
-    "description": "S1 結案：R1 七項＋R2 P13 規則修正全落實；Stacy 判定故事好✓ AI通病✓ 底線✓，直接進 S2",
-    "files": [
-      "PYO-005_S1_gate1.zip"
-    ],
-    "book": "PYO-005",
-    "stage": "S1",
-    "status": "frozen",
-    "round": "greenlight"
-  },
-  {
-    "id": "pyo001-s4b-zh-cn",
-    "title": "PYO-001 三只小猪 zh-CN 派生文本 Gate4 審包",
-    "date": "2026-07-28",
-    "description": "zh-CN 派生-重文本（3 檔位 .draft.json）＋QA 漏斗證據＋gate4 證據包，待 Stacy Green Light",
-    "files": [
-      "PYO-001_S4B_zh-CN.zip"
-    ],
-    "book": "PYO-001",
-    "stage": "S4B",
-    "status": "pending",
-    "round": "R1"
-  },
-  {
-    "id": "pyo003-s4b-zh-cn-gate4",
-    "title": "PYO-003 zh-CN 派生-重 Gate4 证据包",
-    "date": "2026-07-28",
-    "description": "金发女孩和三只熊 zh-CN 文本凍結（Green Light + S5 rebreak）",
-    "files": [
-      "PYO-003_S4B_zh-CN.zip"
-    ],
-    "book": "PYO-003",
-    "stage": "S4B",
-    "status": "frozen",
-    "round": "greenlight"
-  },
-  {
-    "id": "pyo017-s1-gate1",
-    "title": "PYO-017《我的斑點不一樣》S1 故事設計 Gate1 審包",
-    "date": "2026-07-28",
-    "description": "小花豹斑斑三次偽裝斑點失敗→猜猜我是誰→媽媽辨認；AI verdict: pass，等待 Stacy 審核",
-    "files": [
-      "PYO-017_S1_gate1.zip"
-    ],
-    "book": "PYO-017",
-    "stage": "S1",
-    "status": "pending",
-    "round": "R1"
-  },
-  {
-    "id": "pyo017-s1-gate1-r2",
-    "title": "PYO-017《我的斑點不一樣》S1 故事設計 Gate1 R2 修訂版",
-    "date": "2026-07-28",
-    "description": "R2 六項修訂：星星斑點→右側腰際、P11-P12 雙層翻轉、遮→掀對稱、疊句旁白化、左右鎖定、P13 自述收束；AI verdict: pass，等待 Green Light",
-    "files": [
-      "PYO-017_S1_gate1_R2.zip"
-    ],
-    "book": "PYO-017",
-    "stage": "S1",
-    "status": "pending",
-    "round": "R2"
-  },
-  {
-    "id": "pyo017-s1-gate1-r3",
-    "title": "PYO-017《我的斑點不一樣》S1 Green Light",
-    "date": "2026-07-28",
-    "description": "S1 結案：R1 六項結構＋R2 三項同步全落實；故事層通過，直接進 S2",
-    "files": [
-      "PYO-017_S1_gate1_R3.zip"
-    ],
-    "book": "PYO-017",
-    "stage": "S1",
-    "status": "frozen",
-    "round": "greenlight"
-  },
-  {
-    "id": "pyo019-s1-gate1",
-    "title": "PYO-019《城市老鼠與鄉下老鼠》S1 故事設計 Gate 1 審包",
-    "date": "2026-07-28",
-    "description": "成長旅程型＋三次驚嚇遞進，AI QA 10/10 pass 一輪收斂，等待 Stacy Green Light",
-    "files": [
-      "PYO-019_S1_gate1.zip"
-    ],
-    "book": "PYO-019",
-    "stage": "S1",
-    "status": "pending",
-    "round": "gate1"
-  },
-  {
-    "id": "pyo019-s1-gate1-r2",
-    "title": "PYO-019《城市老鼠與鄉下老鼠》S1 故事設計 Gate1 R2 修訂版",
-    "date": "2026-07-28",
-    "description": "R2 四項修訂：P12 城鄉月光接回、疊句 P07 補回、禾禾短尾搖晃、P11 刪旁白結論；AI QA 10/10 pass，等待 Green Light",
-    "files": [
-      "PYO-019_S1_gate1_R2.zip"
-    ],
-    "book": "PYO-019",
-    "stage": "S1",
-    "status": "pending",
-    "round": "R2"
-  },
-  {
-    "id": "pyo005-s2-gate2",
-    "title": "PYO-005 S2 分鏡 關卡②審包",
-    "date": "2026-07-28",
-    "description": "S2 分鏡 gate2 審包（R1），AI QA 八維 pass，等待 Stacy 審閱",
-    "files": [
-      "PYO-005_S2_gate2.zip"
-    ],
-    "book": "PYO-005",
-    "stage": "S2",
-    "status": "pending",
-    "round": "gate2"
-  },
-  {
-    "id": "pyo019-s2-gate2",
-    "title": "PYO-019 城市老鼠與鄉下老鼠 — S2 分鏡 gate2 審包",
-    "date": "2026-07-28",
-    "description": "S2 分鏡表 v0.12 R2（Stacy 6 項修改套用）+ gate2 審閱檔 + QA round3-4。八維 pass，等 Green Light。",
-    "files": [
-      "PYO-019_S2_gate2.zip"
-    ],
-    "book": "PYO-019",
-    "stage": "S2",
-    "status": "pending",
-    "round": "R2"
-  },
-  {
-    "id": "pyo017-s2-gate2",
-    "title": "PYO-017 S2 分鏡 — 關卡② 戲劇效果審",
-    "date": "2026-07-28",
-    "description": "《我的斑點不一樣》S2 分鏡 R2（17 項 R1 修改到位）+ QA round5 pass + gate2 審閱檔",
-    "files": [
-      "PYO-017_S2_gate2.zip"
-    ],
-    "book": "PYO-017",
-    "stage": "S2",
-    "status": "pending",
-    "round": "R2"
-  },
-  {
-    "id": "pyo005-s2-gate2-r2",
-    "title": "PYO-005《黑夜裡的小燈》S2 分鏡 Gate2 R2 修訂版",
-    "date": "2026-07-29",
-    "description": "R2：17 項 R1 修改全落地（三檔重編＋版面多樣化＋圖說打磨＋擬聲具名）；AI QA 八維 pass，等待 Green Light",
-    "files": [
-      "PYO-005_S2_gate2_R2.zip"
-    ],
-    "book": "PYO-005",
-    "stage": "S2",
-    "status": "pending",
-    "round": "R2"
-  },
-  {
-    "id": "pyo017-s3-gate3",
-    "title": "PYO-017《我的斑點不一樣》S3 繁中文案 — 關卡③審包",
-    "date": "2026-07-29",
-    "description": "zh-TW 母本三檔（5-6/3-5/2-3）＋QA 漏斗 2 輪＋gate3 整合審閱檔。verdict: escalated（⏸️ B-4 對話比例待裁定）。",
-    "files": [
-      "PYO-017_S3_zh-TW.zip"
-    ],
-    "book": "PYO-017",
-    "stage": "S3",
-    "status": "frozen",
-    "round": "greenlight"
-  },
-  {
-    "id": "pyo019-s3-gate3",
-    "title": "PYO-019 城市老鼠與鄉下老鼠 — S3 繁中文案 關卡③審包",
-    "date": "2026-07-29",
-    "description": "zh-TW 文本 QA 完成（verdict: escalated, ⏸️×2），等 Stacy 親審。含 gate3 整合審閱檔＋QA 報告 round1-2＋copy 總表＋三檔 draft。",
-    "files": [
-      "PYO-019_S3_zh-TW.zip"
-    ],
-    "book": "PYO-019",
-    "stage": "S3",
-    "status": "pending",
-    "round": "R1"
-  },
-  {
-    "id": "pyo005-s3-gate3",
-    "title": "PYO-005《黑夜裡的小燈》S3 繁中文案 — 關卡③審包",
-    "date": "2026-07-29",
-    "description": "zh-TW 母本三檔（5-6/3-5/2-3）＋QA 漏斗 2 輪＋gate3 整合審閱檔。verdict: escalated（⏸️×1：2-3 P09 三連否定待裁定）。",
-    "files": [
-      "PYO-005_S3_zh-TW.zip"
-    ],
-    "book": "PYO-005",
-    "stage": "S3",
-    "status": "pending",
-    "round": "R1"
-  },
-  {
-    "id": "pyo019-s3-gate3-r2",
-    "title": "PYO-019 S3 zh-TW 文案 R2 送審",
-    "date": "2026-07-29",
-    "description": "Stacy R1 十項修訂已落地，送 R2 審查",
-    "files": [
-      "PYO-019_S3_zh-TW_R2.zip"
-    ],
-    "book": "PYO-019",
-    "stage": "S3",
-    "status": "pending",
-    "round": "R2"
-  },
-  {
-    "id": "pyo033-s1-gate1",
-    "title": "PYO-033 S1 故事設計書 — 關卡① 審包",
-    "date": "2026-07-29",
-    "description": "《誰把種子藏起來？》環遊式 14 頁母版骨架，主編 10 維全 pass，交 Stacy Green Light",
-    "files": [
-      "PYO-033_S1_gate1.zip"
-    ],
-    "book": "PYO-033",
-    "stage": "S1",
-    "status": "frozen",
-    "round": "R1"
-  },
-  {
-    "id": "pyo033-s1-gate1-r2",
-    "title": "PYO-033《誰把種子藏起來？》S1 故事設計 Gate1 R2 修訂版",
-    "date": "2026-07-29",
-    "description": "R1 四項修改完成（時間線秋藏春醒/三站預埋橡樹苗+翻轉補完/lock features 去可變狀態/P14 全員同框），主編 R2 10 維全 pass，交 Stacy Green Light",
-    "files": [
-      "PYO-033_S1_gate1_R2.zip"
-    ],
-    "book": "PYO-033",
-    "stage": "S1",
-    "status": "frozen",
-    "round": "R2"
-  },
-  {
-    "id": "pyo005-s4a-gate4",
-    "title": "PYO-005《黑夜裡的小燈》S4A en-US gate4 證據包",
-    "date": "2026-07-29",
-    "description": "en-US 三檔 draft + QA 二輪（R1 fix_required→R2 復核輪）+ 回譯全量 35 頁 + gate4 證據包。⏸️ 2 項待 Stacy 裁決（F3 P10 平行、F8 P01 冒號格式）",
-    "files": [
-      "PYO-005_S4A_en-US.zip"
-    ],
-    "book": "PYO-005",
-    "stage": "S4A",
-    "status": "pending",
-    "round": "gate4"
-  },
-  {
-    "id": "pyo017-s4a-gate4",
-    "title": "PYO-017《我的斑點不一樣》S4A en-US gate4 證據包",
-    "date": "2026-07-29",
-    "description": "en-US 三檔 draft + QA 二輪（R1 fix_required→R2 復核輪 pass）+ 回譯全量 33 頁 + gate4 證據包。verdict: pass（3 字串級修正已驗證）",
-    "files": [
-      "PYO-017_S4A_en-US.zip"
-    ],
-    "book": "PYO-017",
-    "stage": "S4A",
-    "status": "pending",
-    "round": "gate4"
-  },
-  {
-    "id": "pyo019-s4a-gate4",
-    "title": "PYO-019《城市老鼠與鄉下老鼠》S4A en-US gate4 證據包",
-    "date": "2026-07-29",
-    "description": "en-US 三檔 draft + QA 一輪 pass（checklist 24/0、ESL 0 筆、concept fidelity 全過）+ 回譯全量 30 頁（0 中度偏移）+ gate4 證據包。等待 Stacy 證據審 Green Light",
-    "files": [
-      "PYO-019_S4A_en-US.zip"
-    ],
-    "book": "PYO-019",
-    "stage": "S4A",
-    "status": "pending",
-    "round": "gate4"
-  },
-  {
-    "id": "pyo005-s4a-r2",
-    "title": "PYO-005《黑夜裡的小燈》S4A en-US R2（Stacy R1 beat 修正）",
-    "date": "2026-07-30",
-    "description": "Stacy R1 回修：2-3 P09 補回 Hand not tight. beat + QA round3 + gate4 重生成。⏸️ 3 項待裁決（WC-1 總量 88.75>88、F3 平行、F8 冒號）",
-    "files": [
-      "PYO-005_S4A_en-US_R2.zip"
-    ],
-    "book": "PYO-005",
-    "stage": "S4A",
-    "status": "pending",
-    "round": "R2"
-  },
-  {
-    "id": "pyo019-s4a-gate4-r2",
-    "title": "PYO-019《城市老鼠與鄉下老鼠》S4A en-US gate4 R2",
-    "date": "2026-07-30",
-    "description": "R1 三處修改：5-6 P02/P07 + 3-5 P07 冠詞/主語修正；registry Nibble/Glitz + 5 擬聲詞 Stacy 確認。等待 Green Light",
-    "files": [
-      "PYO-019_S4A_en-US_R2.zip"
-    ],
-    "book": "PYO-019",
-    "stage": "S4A",
-    "status": "pending",
-    "round": "R2"
-  },
-  {
-    "id": "pyo017-s4a-gate4-r2",
-    "title": "PYO-017《我的斑點不一樣》S4A en-US R2（Stacy R1 五項修改落地）",
-    "date": "2026-07-30",
-    "description": "Stacy R1 五項修改精確落地（5-6 P02 spot + 2-3 P05/P11/P12/P13）+ registry 補登 + 回譯 5 頁重譯 + gate4 重生成。2-3 lint 3 項超限＝Stacy 增字造成，原樣保留。",
-    "files": [
-      "PYO-017_S4A_en-US_R2.zip"
-    ],
-    "book": "PYO-017",
-    "stage": "S4A",
-    "status": "pending",
-    "round": "R2"
-  }
-]
+  "deliveries": [
+    {
+      "id": "bitable-workbench",
+      "title": "Bitable 工作台設定",
+      "date": "2026-07-09",
+      "description": "Bitable schema 提案 + 三本種子書重置 + 工作表配置",
+      "files": [
+        "bitable_workbench.zip"
+      ],
+      "book": "",
+      "stage": "",
+      "status": "frozen",
+      "round": ""
+    },
+    {
+      "id": "pyo011-s3-r2",
+      "title": "PYO-011 S3 繁中文案 R2（2026-07-21，覆蓋 R1）",
+      "date": "2026-07-21",
+      "description": "Stacy 親審後去編稿腔＋修正 P11 對白歸屬，第二輪交付",
+      "files": [
+        "PYO-011_S3_zh-TW_R2.zip"
+      ],
+      "book": "PYO-011",
+      "stage": "S3",
+      "status": "frozen",
+      "round": "R2"
+    },
+    {
+      "id": "pyo011-s3-greenlight",
+      "title": "PYO-011 S3 繁中文案 Green Light 凍結版（2026-07-21）",
+      "date": "2026-07-21",
+      "description": "Gate3 GREEN LIGHT 後凍結版：zh-TW 三檔定稿（.json）＋copy 總表＋gate3_decision＋QA 報告＋book.yaml——覆蓋 R2",
+      "files": [
+        "PYO-011_S3_zh-TW_GreenLight.zip"
+      ],
+      "book": "PYO-011",
+      "stage": "S3",
+      "status": "frozen",
+      "round": "GL"
+    },
+    {
+      "id": "pyo014-s3-gate3",
+      "title": "PYO-014 S3 繁中文案 Gate3 審包",
+      "date": "2026-07-21",
+      "description": "《阿嬤的圍裙口袋》S3 重做完整交付：三檔文案＋copy 總表＋QA 三輪報告＋gate3 整合審包，等待 Stacy 親審 Green Light",
+      "files": [
+        "PYO-014_S3_zh-TW.zip"
+      ],
+      "book": "PYO-014",
+      "stage": "S3",
+      "status": "deprecated",
+      "round": "R1"
+    },
+    {
+      "id": "pyo014-s3-r2",
+      "title": "PYO-014 S3 繁中文案 R2（Stacy R1 修訂後重審）",
+      "date": "2026-07-21",
+      "description": "《阿嬤的圍裙口袋》S3 Gate3 R2：依 Stacy R1 四維度修改（痕跡→記號/印子＋做過/走過→留的＋P03 因果拆兩拍＋P06 去擬人），三檔文案＋copy 總表＋QA 報告＋gate3 R2 審包",
+      "files": [
+        "PYO-014_S3_zh-TW_R2.zip"
+      ],
+      "book": "PYO-014",
+      "stage": "S3",
+      "status": "deprecated",
+      "round": "R2"
+    },
+    {
+      "id": "pyo014-s3-greenlight",
+      "title": "PYO-014 S3 繁中文案 Green Light 凍結版（2026-07-21）",
+      "date": "2026-07-21",
+      "description": "Gate3 GREEN LIGHT 後凍結版：zh-TW 三檔定稿（.json）＋copy 總表＋gate3_decision＋QA 報告＋book.yaml——覆蓋 R2",
+      "files": [
+        "PYO-014_S3_zh-TW_GreenLight.zip"
+      ],
+      "book": "PYO-014",
+      "stage": "S3",
+      "status": "deprecated",
+      "round": "GL"
+    },
+    {
+      "id": "pyo015-s3-r2",
+      "title": "PYO-015 S3 繁中文案 R3（R2 單項標點修正後重審）",
+      "date": "2026-07-21",
+      "description": "《誰把種子藏起來？》S3 Gate3 R3：R2 僅一處品牌合規標點修正（2-3 P05 問句加引號歸屬栗栗），四維度全通過",
+      "files": [
+        "PYO-015_S3_zh-TW_R2.zip",
+        "PYO-015_S3_zh-TW_R3.zip"
+      ],
+      "book": "PYO-015",
+      "stage": "S3",
+      "status": "deprecated",
+      "round": "R3"
+    },
+    {
+      "id": "pyo006-s4b-localize",
+      "title": "PYO-006 S4B 六語放量凍結版（2026-07-21）",
+      "date": "2026-07-21",
+      "description": "《擔心口袋裡有什麼？》六語文案凍結：ja/en-GB/es-MX/pt-BR/th-TH/vi-VN × 3 tiers = 18 定稿 + copy 總表 + QA 證據包 + registry 更新",
+      "files": [
+        "PYO-006_S4B_6lang.zip"
+      ],
+      "book": "PYO-006",
+      "stage": "S4B",
+      "status": "deprecated",
+      "round": "GL"
+    },
+    {
+      "id": "pyo015-s3-greenlight",
+      "title": "PYO-015 S3 繁中文案 Green Light 準備包",
+      "date": "2026-07-22",
+      "description": "《誰把種子藏起來？》Gate3 GREENLIT：zh-TW 三檔 draft＋copy 總表＋QA 五輪報告＋gate3 審包——供 Stacy 本機 Green Light 收尾",
+      "files": [
+        "PYO-015_S3_zh-TW_GreenLight_prep.zip"
+      ],
+      "book": "PYO-015",
+      "stage": "S3",
+      "status": "deprecated",
+      "round": "GL"
+    },
+    {
+      "id": "pyo008-s4b-localize",
+      "title": "PYO-008 S4B 六語放量凍結版（2026-07-22）",
+      "date": "2026-07-22",
+      "description": "《小天鵝慢慢長大》六語文案凍結：ja/en-GB/es-MX/pt-BR/th-TH/vi-VN × 3 tiers = 18 定稿 + copy 總表 + QA 證據包 + registry 更新",
+      "files": [
+        "PYO-008_S4B_6lang.zip"
+      ],
+      "book": "PYO-008",
+      "stage": "S4B",
+      "status": "frozen",
+      "round": "GL"
+    },
+    {
+      "id": "pyo002-s4b-localize",
+      "title": "PYO-002 S4B 六語放量審稿版（2026-07-22）",
+      "date": "2026-07-22",
+      "description": "《龜兔賽跑》六語文案 draft：ja/en-GB/es-MX/pt-BR/th-TH/vi-VN × 3 tiers = 18 draft + copy 總表 + QA 證據包 + B0 rulings",
+      "files": [
+        "PYO-002_S4B_6lang.zip"
+      ],
+      "book": "PYO-002",
+      "stage": "S4B",
+      "status": "frozen",
+      "round": "R1"
+    },
+    {
+      "id": "pyo008-s4-review",
+      "title": "PYO-008《小天鵝慢慢長大》S4 文字審查包（R1/R2/R3 + gate4 QA）",
+      "date": "2026-07-22",
+      "description": "三輪文字審查報告（R1 不通過、R2 修改指令、R3 Greenlight）＋ gate4 en-US 審包 QA 核驗",
+      "files": [
+        "PYO-008_S4_review.zip"
+      ],
+      "book": "PYO-008",
+      "stage": "S4A",
+      "status": "frozen",
+      "round": "GL"
+    },
+    {
+      "id": "pyo009-s4-gate4",
+      "title": "PYO-009《我有我的小光》S4 gate4 五維度審包＋色盤分析",
+      "date": "2026-07-22",
+      "description": "gate4 en-US 五維度審查（初版 + R2）＋ Opus 色盤專家分析",
+      "files": [
+        "PYO-009_S4_gate4_review.zip"
+      ],
+      "book": "PYO-009",
+      "stage": "S4A",
+      "status": "deprecated",
+      "round": "R2"
+    },
+    {
+      "id": "pyo012-s4-review",
+      "title": "PYO-012《獅子與老鼠》S4 文字審查包（R1 Greenlight + locale 稽核 + 微修指令）",
+      "date": "2026-07-22",
+      "description": "R1 greenlight + 翻譯腔／local 語感專項稽核 + 微修指令單＋ gate4 QA",
+      "files": [
+        "PYO-012_S4_review.zip"
+      ],
+      "book": "PYO-012",
+      "stage": "S4A",
+      "status": "frozen",
+      "round": "GL"
+    },
+    {
+      "id": "pyo013-s4-review",
+      "title": "PYO-013《拔蘿蔔》S4 文字審查包（R1 Greenlight + gate4 QA）",
+      "date": "2026-07-22",
+      "description": "R1 五維度全通過 Greenlight ＋ gate4 en-US 審包核驗",
+      "files": [
+        "PYO-013_S4_review.zip"
+      ],
+      "book": "PYO-013",
+      "stage": "S4A",
+      "status": "frozen",
+      "round": "GL"
+    },
+    {
+      "id": "pyo010-s4a-en-us-gate4",
+      "title": "PYO-010《不一樣的斑點》S4A en-US gate4 證據包",
+      "date": "2026-07-22",
+      "description": "en-US 三檔 draft + QA 二輪收斂（復核輪）+ 回譯全量 38 頁 + gate4 證據包，待 Stacy 證據審 Green Light",
+      "files": [
+        "PYO-010_S4A_en-US.zip"
+      ],
+      "book": "PYO-010",
+      "stage": "S4A",
+      "status": "deprecated",
+      "round": "R1"
+    },
+    {
+      "id": "pyo015-s4a-gate4",
+      "title": "PYO-015 S4A en-US Gate4 證據審包（2026-07-22）",
+      "date": "2026-07-22",
+      "description": "《誰把種子藏起來？》S4A en-US 三檔 draft + QA 二輪 + gate4 證據包 + 回譯全量 + registry 提案，等待 Stacy 證據審 Green Light",
+      "files": [
+        "PYO-015_S4A_en-US.zip"
+      ],
+      "book": "PYO-015",
+      "stage": "S4A",
+      "status": "deprecated",
+      "round": "R1"
+    },
+    {
+      "id": "pyo011-s4a-en-us-gate4",
+      "title": "PYO-011《輪到你，輪到我》S4A en-US gate④ 交審",
+      "date": "2026-07-22",
+      "description": "en-US 三檔 draft + QA 二輪(復核輪) + 回譯 31 頁 + gate4 證據包。⏸️ E-2 高潮偏移待裁定。",
+      "files": [
+        "PYO-011_S4A_en-US.zip"
+      ],
+      "book": "PYO-011",
+      "stage": "S4A",
+      "status": "frozen",
+      "round": "R2"
+    },
+    {
+      "id": "pyo010-s4-r2",
+      "title": "PYO-010《不一樣的斑點》S4A en-US R2 審查包（6 必改落地 + F03-F06 裁定 + registry 回寫）",
+      "date": "2026-07-23",
+      "description": "S4 R1 六項必改落地 + 回譯 6 頁同步 + gate4_en-US_review.md 重生成 + F03-F06 裁定 + registry 回寫 + B-4 例外 + 機檢全綠",
+      "files": [
+        "PYO-010_S4A_en-US_R2.zip"
+      ],
+      "book": "PYO-010",
+      "stage": "S4A",
+      "status": "deprecated",
+      "round": "R2"
+    },
+    {
+      "id": "pyo015-s4-r2",
+      "title": "PYO-015 S4 R2 修改重審",
+      "date": "2026-07-23",
+      "description": "S4 R1 五維審修改落地：gate4 證據包已用 R1 後文本重生（7/23）+ 回譯同步 + 機檢報告",
+      "files": [
+        "PYO-015_S4_R2.zip"
+      ],
+      "book": "PYO-015",
+      "stage": "S4A",
+      "status": "deprecated",
+      "round": "R2"
+    },
+    {
+      "id": "pyo011-s4a-r2",
+      "title": "PYO-011《輪到你，輪到我》S4A en-US gate4 R2",
+      "date": "2026-07-23",
+      "description": "Stacy 指示 15+ 項修改＋E-2 Option A「I want to watch you swing!」落地，機檢全綠，回譯 3 中度→輕微/無",
+      "files": [
+        "PYO-011_S4A_en-US_R2.zip"
+      ],
+      "book": "PYO-011",
+      "stage": "S4A",
+      "status": "frozen",
+      "round": "R2"
+    },
+    {
+      "id": "pyo011-s4a-r3",
+      "title": "PYO-011 S4A en-US R3（P07 指示修改＋附件）",
+      "date": "2026-07-23",
+      "description": "R3：Stacy R2 審稿 1 項文字修改（2-3 P07）＋Registry 確認＋Lint 21 項 warnings 明細",
+      "files": [
+        "PYO-011_S4A_en-US_R3.zip"
+      ],
+      "book": "PYO-011",
+      "stage": "S4A",
+      "status": "frozen",
+      "round": "R3"
+    },
+    {
+      "id": "pyo010-s4-r3",
+      "title": "PYO-010《不一樣的斑點》S4A en-US R3（三檔補圓圓台詞＋2-3 budget trim）",
+      "date": "2026-07-23",
+      "description": "R3：Stacy R2 必修——高潮頁三檔補圓圓台詞（zh「那邊有亮亮的！」）；2-3 action beat 歸因＋P01 trim 控 max_total_len 87.25/88；回譯 4 頁重譯＋gate4 重生成＋機檢全綠",
+      "files": [
+        "PYO-010_S4A_en-US_R3.zip"
+      ],
+      "book": "PYO-010",
+      "stage": "S4A",
+      "status": "deprecated",
+      "round": "R3"
+    },
+    {
+      "id": "pyo008-s1-gate1",
+      "title": "PYO-008《北風與太陽》S1 故事設計 Gate1 審包（重做版）",
+      "date": "2026-07-25",
+      "description": "《北風與太陽》（原名小天鵝慢慢長大）重做 S1：design.md＋book.yaml＋QA round1（十維 pass）＋gate1 審包",
+      "files": [
+        "PYO-008_S1_gate1.zip"
+      ],
+      "book": "PYO-008",
+      "stage": "S1",
+      "status": "frozen",
+      "round": "R1"
+    },
+    {
+      "id": "pyo005-s1-gate1",
+      "title": "PYO-005《黑夜裡的小燈》S1 Green Light",
+      "date": "2026-07-28",
+      "description": "S1 結案：R1 七項＋R2 P13 規則修正全落實；Stacy 判定故事好✓ AI通病✓ 底線✓，直接進 S2",
+      "files": [
+        "PYO-005_S1_gate1.zip"
+      ],
+      "book": "PYO-005",
+      "stage": "S1",
+      "status": "frozen",
+      "round": "GL"
+    },
+    {
+      "id": "pyo001-s4b-zh-cn",
+      "title": "PYO-001 三只小猪 zh-CN 派生文本 Gate4 審包",
+      "date": "2026-07-28",
+      "description": "zh-CN 派生-重文本（3 檔位 .draft.json）＋QA 漏斗證據＋gate4 證據包，待 Stacy Green Light",
+      "files": [
+        "PYO-001_S4B_zh-CN.zip"
+      ],
+      "book": "PYO-001",
+      "stage": "S4B",
+      "status": "frozen",
+      "round": "R1"
+    },
+    {
+      "id": "pyo003-s4b-zh-cn-gate4",
+      "title": "PYO-003 zh-CN 派生-重 Gate4 证据包",
+      "date": "2026-07-28",
+      "description": "金发女孩和三只熊 zh-CN 文本凍結（Green Light + S5 rebreak）",
+      "files": [
+        "PYO-003_S4B_zh-CN.zip"
+      ],
+      "book": "PYO-003",
+      "stage": "S4B",
+      "status": "frozen",
+      "round": "GL"
+    },
+    {
+      "id": "pyo017-s1-gate1",
+      "title": "PYO-017《我的斑點不一樣》S1 故事設計 Gate1 審包",
+      "date": "2026-07-28",
+      "description": "小花豹斑斑三次偽裝斑點失敗→猜猜我是誰→媽媽辨認；AI verdict: pass，等待 Stacy 審核",
+      "files": [
+        "PYO-017_S1_gate1.zip"
+      ],
+      "book": "PYO-017",
+      "stage": "S1",
+      "status": "frozen",
+      "round": "R1"
+    },
+    {
+      "id": "pyo017-s1-gate1-r2",
+      "title": "PYO-017《我的斑點不一樣》S1 故事設計 Gate1 R2 修訂版",
+      "date": "2026-07-28",
+      "description": "R2 六項修訂：星星斑點→右側腰際、P11-P12 雙層翻轉、遮→掀對稱、疊句旁白化、左右鎖定、P13 自述收束；AI verdict: pass，等待 Green Light",
+      "files": [
+        "PYO-017_S1_gate1_R2.zip"
+      ],
+      "book": "PYO-017",
+      "stage": "S1",
+      "status": "frozen",
+      "round": "R2"
+    },
+    {
+      "id": "pyo017-s1-gate1-r3",
+      "title": "PYO-017《我的斑點不一樣》S1 Green Light",
+      "date": "2026-07-28",
+      "description": "S1 結案：R1 六項結構＋R2 三項同步全落實；故事層通過，直接進 S2",
+      "files": [
+        "PYO-017_S1_gate1_R3.zip"
+      ],
+      "book": "PYO-017",
+      "stage": "S1",
+      "status": "frozen",
+      "round": "GL"
+    },
+    {
+      "id": "pyo019-s1-gate1",
+      "title": "PYO-019《城市老鼠與鄉下老鼠》S1 故事設計 Gate 1 審包",
+      "date": "2026-07-28",
+      "description": "成長旅程型＋三次驚嚇遞進，AI QA 10/10 pass 一輪收斂，等待 Stacy Green Light",
+      "files": [
+        "PYO-019_S1_gate1.zip"
+      ],
+      "book": "PYO-019",
+      "stage": "S1",
+      "status": "frozen",
+      "round": "R1"
+    },
+    {
+      "id": "pyo019-s1-gate1-r2",
+      "title": "PYO-019《城市老鼠與鄉下老鼠》S1 故事設計 Gate1 R2 修訂版",
+      "date": "2026-07-28",
+      "description": "R2 四項修訂：P12 城鄉月光接回、疊句 P07 補回、禾禾短尾搖晃、P11 刪旁白結論；AI QA 10/10 pass，等待 Green Light",
+      "files": [
+        "PYO-019_S1_gate1_R2.zip"
+      ],
+      "book": "PYO-019",
+      "stage": "S1",
+      "status": "frozen",
+      "round": "R2"
+    },
+    {
+      "id": "pyo005-s2-gate2",
+      "title": "PYO-005 S2 分鏡 關卡②審包",
+      "date": "2026-07-28",
+      "description": "S2 分鏡 gate2 審包（R1），AI QA 八維 pass，等待 Stacy 審閱",
+      "files": [
+        "PYO-005_S2_gate2.zip"
+      ],
+      "book": "PYO-005",
+      "stage": "S2",
+      "status": "frozen",
+      "round": "R1"
+    },
+    {
+      "id": "pyo019-s2-gate2",
+      "title": "PYO-019 城市老鼠與鄉下老鼠 — S2 分鏡 gate2 審包",
+      "date": "2026-07-28",
+      "description": "S2 分鏡表 v0.12 R2（Stacy 6 項修改套用）+ gate2 審閱檔 + QA round3-4。八維 pass，等 Green Light。",
+      "files": [
+        "PYO-019_S2_gate2.zip"
+      ],
+      "book": "PYO-019",
+      "stage": "S2",
+      "status": "frozen",
+      "round": "R2"
+    },
+    {
+      "id": "pyo017-s2-gate2",
+      "title": "PYO-017 S2 分鏡 — 關卡② 戲劇效果審",
+      "date": "2026-07-28",
+      "description": "《我的斑點不一樣》S2 分鏡 R2（17 項 R1 修改到位）+ QA round5 pass + gate2 審閱檔",
+      "files": [
+        "PYO-017_S2_gate2.zip"
+      ],
+      "book": "PYO-017",
+      "stage": "S2",
+      "status": "frozen",
+      "round": "R2"
+    },
+    {
+      "id": "pyo005-s2-gate2-r2",
+      "title": "PYO-005《黑夜裡的小燈》S2 分鏡 Gate2 R2 修訂版",
+      "date": "2026-07-29",
+      "description": "R2：17 項 R1 修改全落地（三檔重編＋版面多樣化＋圖說打磨＋擬聲具名）；AI QA 八維 pass，等待 Green Light",
+      "files": [
+        "PYO-005_S2_gate2_R2.zip"
+      ],
+      "book": "PYO-005",
+      "stage": "S2",
+      "status": "frozen",
+      "round": "R2"
+    },
+    {
+      "id": "pyo017-s3-gate3",
+      "title": "PYO-017《我的斑點不一樣》S3 繁中文案 — 關卡③審包",
+      "date": "2026-07-29",
+      "description": "zh-TW 母本三檔（5-6/3-5/2-3）＋QA 漏斗 2 輪＋gate3 整合審閱檔。verdict: escalated（⏸️ B-4 對話比例待裁定）。",
+      "files": [
+        "PYO-017_S3_zh-TW.zip"
+      ],
+      "book": "PYO-017",
+      "stage": "S3",
+      "status": "frozen",
+      "round": "GL"
+    },
+    {
+      "id": "pyo019-s3-gate3",
+      "title": "PYO-019 城市老鼠與鄉下老鼠 — S3 繁中文案 關卡③審包",
+      "date": "2026-07-29",
+      "description": "zh-TW 文本 QA 完成（verdict: escalated, ⏸️×2），等 Stacy 親審。含 gate3 整合審閱檔＋QA 報告 round1-2＋copy 總表＋三檔 draft。",
+      "files": [
+        "PYO-019_S3_zh-TW.zip"
+      ],
+      "book": "PYO-019",
+      "stage": "S3",
+      "status": "frozen",
+      "round": "R1"
+    },
+    {
+      "id": "pyo005-s3-gate3",
+      "title": "PYO-005《黑夜裡的小燈》S3 繁中文案 — 關卡③審包",
+      "date": "2026-07-29",
+      "description": "zh-TW 母本三檔（5-6/3-5/2-3）＋QA 漏斗 2 輪＋gate3 整合審閱檔。verdict: escalated（⏸️×1：2-3 P09 三連否定待裁定）。",
+      "files": [
+        "PYO-005_S3_zh-TW.zip"
+      ],
+      "book": "PYO-005",
+      "stage": "S3",
+      "status": "frozen",
+      "round": "R1"
+    },
+    {
+      "id": "pyo019-s3-gate3-r2",
+      "title": "PYO-019 S3 zh-TW 文案 R2 送審",
+      "date": "2026-07-29",
+      "description": "Stacy R1 十項修訂已落地，送 R2 審查",
+      "files": [
+        "PYO-019_S3_zh-TW_R2.zip"
+      ],
+      "book": "PYO-019",
+      "stage": "S3",
+      "status": "frozen",
+      "round": "R2"
+    },
+    {
+      "id": "pyo033-s1-gate1",
+      "title": "PYO-033 S1 故事設計書 — 關卡① 審包",
+      "date": "2026-07-29",
+      "description": "《誰把種子藏起來？》環遊式 14 頁母版骨架，主編 10 維全 pass，交 Stacy Green Light",
+      "files": [
+        "PYO-033_S1_gate1.zip"
+      ],
+      "book": "PYO-033",
+      "stage": "S1",
+      "status": "frozen",
+      "round": "R1"
+    },
+    {
+      "id": "pyo033-s1-gate1-r2",
+      "title": "PYO-033《誰把種子藏起來？》S1 故事設計 Gate1 R2 修訂版",
+      "date": "2026-07-29",
+      "description": "R1 四項修改完成（時間線秋藏春醒/三站預埋橡樹苗+翻轉補完/lock features 去可變狀態/P14 全員同框），主編 R2 10 維全 pass，交 Stacy Green Light",
+      "files": [
+        "PYO-033_S1_gate1_R2.zip"
+      ],
+      "book": "PYO-033",
+      "stage": "S1",
+      "status": "frozen",
+      "round": "R2"
+    },
+    {
+      "id": "pyo005-s4a-gate4",
+      "title": "PYO-005《黑夜裡的小燈》S4A en-US gate4 證據包",
+      "date": "2026-07-29",
+      "description": "en-US 三檔 draft + QA 二輪（R1 fix_required→R2 復核輪）+ 回譯全量 35 頁 + gate4 證據包。⏸️ 2 項待 Stacy 裁決（F3 P10 平行、F8 P01 冒號格式）",
+      "files": [
+        "PYO-005_S4A_en-US.zip"
+      ],
+      "book": "PYO-005",
+      "stage": "S4A",
+      "status": "pending",
+      "round": "R1"
+    },
+    {
+      "id": "pyo017-s4a-gate4",
+      "title": "PYO-017《我的斑點不一樣》S4A en-US gate4 證據包",
+      "date": "2026-07-29",
+      "description": "en-US 三檔 draft + QA 二輪（R1 fix_required→R2 復核輪 pass）+ 回譯全量 33 頁 + gate4 證據包。verdict: pass（3 字串級修正已驗證）",
+      "files": [
+        "PYO-017_S4A_en-US.zip"
+      ],
+      "book": "PYO-017",
+      "stage": "S4A",
+      "status": "pending",
+      "round": "R1"
+    },
+    {
+      "id": "pyo019-s4a-gate4",
+      "title": "PYO-019《城市老鼠與鄉下老鼠》S4A en-US gate4 證據包",
+      "date": "2026-07-29",
+      "description": "en-US 三檔 draft + QA 一輪 pass（checklist 24/0、ESL 0 筆、concept fidelity 全過）+ 回譯全量 30 頁（0 中度偏移）+ gate4 證據包。等待 Stacy 證據審 Green Light",
+      "files": [
+        "PYO-019_S4A_en-US.zip"
+      ],
+      "book": "PYO-019",
+      "stage": "S4A",
+      "status": "pending",
+      "round": "R1"
+    },
+    {
+      "id": "pyo005-s4a-r2",
+      "title": "PYO-005《黑夜裡的小燈》S4A en-US R2（Stacy R1 beat 修正）",
+      "date": "2026-07-30",
+      "description": "Stacy R1 回修：2-3 P09 補回 Hand not tight. beat + QA round3 + gate4 重生成。⏸️ 3 項待裁決（WC-1 總量 88.75>88、F3 平行、F8 冒號）",
+      "files": [
+        "PYO-005_S4A_en-US_R2.zip"
+      ],
+      "book": "PYO-005",
+      "stage": "S4A",
+      "status": "pending",
+      "round": "R2"
+    },
+    {
+      "id": "pyo019-s4a-gate4-r2",
+      "title": "PYO-019《城市老鼠與鄉下老鼠》S4A en-US gate4 R2",
+      "date": "2026-07-30",
+      "description": "R1 三處修改：5-6 P02/P07 + 3-5 P07 冠詞/主語修正；registry Nibble/Glitz + 5 擬聲詞 Stacy 確認。等待 Green Light",
+      "files": [
+        "PYO-019_S4A_en-US_R2.zip"
+      ],
+      "book": "PYO-019",
+      "stage": "S4A",
+      "status": "pending",
+      "round": "R2"
+    },
+    {
+      "id": "pyo017-s4a-gate4-r2",
+      "title": "PYO-017《我的斑點不一樣》S4A en-US R2（Stacy R1 五項修改落地）",
+      "date": "2026-07-30",
+      "description": "Stacy R1 五項修改精確落地（5-6 P02 spot + 2-3 P05/P11/P12/P13）+ registry 補登 + 回譯 5 頁重譯 + gate4 重生成。2-3 lint 3 項超限＝Stacy 增字造成，原樣保留。",
+      "files": [
+        "PYO-017_S4A_en-US_R2.zip"
+      ],
+      "book": "PYO-017",
+      "stage": "S4A",
+      "status": "pending",
+      "round": "R2"
+    },
+    {
+      "id": "pyo033-s2-gate2",
+      "title": "PYO-033《誰把種子藏起來？》S2 分鏡 gate2 審包",
+      "date": "2026-07-30",
+      "description": "14 頁母版分鏡 v0.12（3-5=12, 2-3=8）＋八維對抗性自審全 pass＋gate2 審閱檔。中景家族 57%、版面三種、非平視 2。等待 Stacy 戲劇效果審 Green Light。",
+      "files": [
+        "PYO-033_S2_gate2.zip"
+      ],
+      "book": "PYO-033",
+      "stage": "S2",
+      "status": "pending",
+      "round": "R1"
+    }
+  ]
+}
