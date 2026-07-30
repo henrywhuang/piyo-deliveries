@@ -856,6 +856,19 @@
       "stage": "S3",
       "status": "pending",
       "round": "R1"
+    },
+    {
+      "id": "pyo034-s3-r1",
+      "title": "PYO-034 S3 繁中文案 — 關卡③審包",
+      "date": "2026-07-30",
+      "description": "zh-TW 三檔 draft (435/262/133字) + QA round1 pass + gate3 整合審閱檔",
+      "files": [
+        "PYO-034_S3_R1.zip"
+      ],
+      "book": "PYO-034",
+      "stage": "S3",
+      "status": "pending",
+      "round": "R1"
     }
   ]
 }
