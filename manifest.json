@@ -919,7 +919,7 @@
       ],
       "book": "PYO-034",
       "stage": "S4A",
-      "status": "pending",
+      "status": "frozen",
       "round": "R1"
     },
     {
@@ -932,8 +932,21 @@
       ],
       "book": "PYO-034",
       "stage": "S4A",
-      "status": "pending",
+      "status": "frozen",
       "round": "R2"
+    },
+    {
+      "id": "pyo034-s4a-gl",
+      "title": "PYO-034 S4A en-US Green Light 凍結版",
+      "date": "2026-07-31",
+      "description": "三檔定稿 .json + gate4 decision + gate4 review（R2 修訂版）",
+      "files": [
+        "PYO-034_S4A_GL.zip"
+      ],
+      "book": "PYO-034",
+      "stage": "S4A",
+      "status": "frozen",
+      "round": "GL"
     }
   ]
 }
