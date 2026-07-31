@@ -926,7 +926,7 @@
       "id": "pyo034-s4a-r2",
       "title": "PYO-034 S4A en-US R2（Stacy R1 修訂）",
       "date": "2026-07-31",
-      "description": "G 錯型 ×2 修正 + registry 補登（pip/teeny 定案、SPLASH/SPLOOSH/Hee-hee 定案）",
+      "description": "G 錯型 ×2 修正 + registry 補登 + gate4 review 重新生成",
       "files": [
         "PYO-034_S4A_R2.zip"
       ],
