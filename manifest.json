@@ -908,6 +908,19 @@
       "stage": "S4A",
       "status": "pending",
       "round": "R1"
+    },
+    {
+      "id": "pyo034-s4a-r1",
+      "title": "PYO-034 S4A en-US gate4 證據包",
+      "date": "2026-07-31",
+      "description": "三檔 draft.json + copy 總表 + QA round1 + workbench + 回譯 30 頁 + gate4 證據包",
+      "files": [
+        "PYO-034_S4A_R1.zip"
+      ],
+      "book": "PYO-034",
+      "stage": "S4A",
+      "status": "pending",
+      "round": "R1"
     }
   ]
 }
